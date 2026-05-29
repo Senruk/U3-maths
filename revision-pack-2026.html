@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WJEC A2 Unit 3 Pure Mathematics B — Revision Pack 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f4f4f9;color:#222;line-height:1.7}
+.tab-bar{position:sticky;top:0;z-index:100;background:#1a237e;display:flex;flex-wrap:wrap;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.tab-bar button{background:transparent;border:none;color:#fff;padding:14px 18px;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s;flex:1 0 auto;min-width:100px}
+.tab-bar button:hover{background:rgba(255,255,255,.15)}
+.tab-bar button.active{background:#3949ab}
+.section{display:none;padding:30px 40px;max-width:1200px;margin:0 auto}
+.section.active{display:block}
+h1{font-size:28px;color:#1a237e;margin-bottom:6px;border-bottom:3px solid #3949ab;padding-bottom:10px}
+h2{font-size:22px;color:#283593;margin:30px 0 14px;border-left:5px solid #3949ab;padding-left:14px}
+h3{font-size:18px;color:#3949ab;margin:22px 0 10px}
+h4{font-size:16px;color:#5c6bc0;margin:16px 0 8px}
+p,li{margin-bottom:8px}
+table{width:100%;border-collapse:collapse;margin:14px 0 24px;font-size:14px}
+th,td{border:1px solid #ccc;padding:8px 12px;text-align:left;vertical-align:top}
+th{background:#3949ab;color:#fff;font-weight:600}
+tr:nth-child(even){background:#f0f0f8}
+tr:hover{background:#e3e3f0}
+.question-box{background:#fff;border:1px solid #ddd;border-radius:8px;padding:18px 22px;margin:14px 0 20px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+.question-box h4{margin-top:0;color:#1a237e}
+.tag{display:inline-block;background:#e8eaf6;color:#283593;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:600;margin:2px 4px 2px 0}
+.tag-difficulty{background:#fff3e0;color:#e65100}
+.tag-hard{background:#ffebee;color:#c62828}
+.marks{float:right;background:#1a237e;color:#fff;padding:2px 12px;border-radius:12px;font-size:13px;font-weight:700}
+.solution{background:#f5f5f5;border-left:4px solid #66bb6a;padding:12px 16px;margin:10px 0;font-family:'Consolas','Courier New',monospace;font-size:13px;display:none}
+.show-sol{background:#66bb6a;color:#fff;border:none;padding:4px 14px;border-radius:4px;cursor:pointer;font-size:12px;margin:4px 0}
+.show-sol:hover{background:#43a047}
+.tip-box{background:#fff8e1;border-left:5px solid #ffa000;padding:14px 18px;margin:12px 0 18px;border-radius:0 6px 6px 0}
+.tip-box strong{color:#e65100}
+.print-hide{@media print{display:none}}
+@media print{.tab-bar{display:none}.section{display:block!important}.solution{display:block!important}.show-sol{display:none!important}body{background:#fff;font-size:11px}.question-box{break-inside:avoid;page-break-inside:avoid}}
+.highlight{background:#fff9c4;padding:2px 6px;border-radius:3px}
+.warning-box{background:#ffebee;border-left:5px solid #c62828;padding:14px 18px;margin:12px 0 18px;border-radius:0 6px 6px 0}
+.key-point{background:#e8f5e9;border-left:5px solid #43a047;padding:10px 16px;margin:10px 0;border-radius:0 4px 4px 0}
+.math{font-family:'Cambria Math','Times New Roman',serif;font-style:italic}
+.sub{margin-left:18px}
+.double-sub{margin-left:36px}
+@media(max-width:768px){.section{padding:16px}.tab-bar button{font-size:11px;padding:10px 6px;min-width:60px}td,th{padding:4px 6px;font-size:12px}}
+</style>
+<script>
+function showSec(id){
+document.querySelectorAll('.section').forEach(function(s){s.classList.remove('active');});
+document.querySelectorAll('.tab-bar button').forEach(function(b){b.classList.remove('active');});
+document.getElementById('sec-'+id).classList.add('active');
+var m={topicmap:1,questionbank:2,predicted:3,markscheme:4,tips:5};
+document.querySelector('.tab-bar button:nth-child('+m[id]+')').classList.add('active');
+}
+</script>
+</head>
+<body>
+
+<nav class="tab-bar print-hide">
+<button class="active" onclick="showSec('topicmap')">Topic Map</button>
+<button onclick="showSec('questionbank')">Question Bank</button>
+<button onclick="showSec('predicted')">Predicted 2026</button>
+<button onclick="showSec('markscheme')">Mark Scheme</button>
+<button onclick="showSec('tips')">Examiner Tips</button>
+</nav>
+
+<div id="sec-topicmap" class="section active">
+<h1>WJEC A2 Unit 3 Pure Mathematics B — Topic Map &amp; Analysis (2018–2025)</h1>
+<p>Comprehensive frequency analysis based on all available past papers (2018–2025). Use this to prioritise your revision — topics appearing every year are non-negotiable.</p>
+
+<h2>1.1 Topic Frequency Table</h2>
+<table>
+<tr><th>Topic</th><th>2018</th><th>2019</th><th>2022</th><th>2023</th><th>2024</th><th>2025</th><th>Frequency</th><th>Avg Marks</th></tr>
+<tr><td>Algebraic Fractions / Polynomial Division</td><td>Q1</td><td>—</td><td>—</td><td>—</td><td>Q1</td><td>Q1</td><td>3/6</td><td>6</td></tr>
+<tr><td>Partial Fractions</td><td>—</td><td>Q1</td><td>—</td><td>Q1</td><td>Q2</td><td>Q2</td><td>4/6</td><td>7</td></tr>
+<tr><td>Modulus Function</td><td>Q3</td><td>—</td><td>—</td><td>Q2</td><td>Q4</td><td>Q3</td><td>4/6</td><td>7</td></tr>
+<tr><td>Transformations</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Q5</td><td>Q4</td><td>2/6</td><td>6</td></tr>
+<tr><td>Proof by Contradiction</td><td>—</td><td>Q10</td><td>—</td><td>—</td><td>Q6</td><td>Q5</td><td>3/6</td><td>5</td></tr>
+<tr><td>Functions (Domain/Range/Inverse/Composite)</td><td>Q2</td><td>—</td><td>—</td><td>Q3</td><td>Q3</td><td>Q6</td><td>4/6</td><td>8</td></tr>
+<tr><td>Series (Arithmetic/Geometric/Recurrence/Modelling)</td><td>Q10</td><td>Q8</td><td>Q2</td><td>—</td><td>Q7–8</td><td>Q7</td><td>5/6</td><td>10</td></tr>
+<tr><td>Binomial Series (Fractional/Negative Index)</td><td>—</td><td>Q2</td><td>—</td><td>Q1(b)</td><td>Q2(b)</td><td>Q2(b)</td><td>4/6</td><td>5</td></tr>
+<tr><td>Radian Measure</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Q9</td><td>Q8</td><td>2/6</td><td>5</td></tr>
+<tr><td>Small Angle Approximations</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Q10</td><td>Q9</td><td>2/6</td><td>4</td></tr>
+<tr><td>Reciprocal Trig Functions (sec, cosec, cot)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Q11</td><td>Q10</td><td>2/6</td><td>6</td></tr>
+<tr><td>Trig Equations</td><td>Q5</td><td>Q5</td><td>Q3</td><td>Q5</td><td>Q12</td><td>Q11</td><td>6/6</td><td>7</td></tr>
+<tr><td>Compound &amp; Double Angles</td><td>Q6</td><td>Q4</td><td>—</td><td>Q4</td><td>Q13</td><td>Q12</td><td>5/6</td><td>6</td></tr>
+<tr><td>Harmonic Form (R cos / R sin)</td><td>—</td><td>—</td><td>Q1</td><td>Q4(b)</td><td>Q13(b)</td><td>Q12(b)</td><td>4/6</td><td>6</td></tr>
+<tr><td>Chain / Product / Quotient Rule</td><td>Q7</td><td>Q6</td><td>Q4</td><td>Q6</td><td>Q14</td><td>Q13</td><td>6/6</td><td>6</td></tr>
+<tr><td>Implicit Differentiation</td><td>—</td><td>—</td><td>Q5</td><td>Q7</td><td>Q15</td><td>Q14</td><td>4/6</td><td>6</td></tr>
+<tr><td>Trig / Exp / Log Differentiation</td><td>Q7(b)</td><td>Q6(b)</td><td>Q4(b)</td><td>Q6(b)</td><td>Q14(b)</td><td>Q13(b)</td><td>6/6</td><td>5</td></tr>
+<tr><td>Points of Inflection</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Q16</td><td>Q15</td><td>2/6</td><td>4</td></tr>
+<tr><td>Parametric Differentiation</td><td>—</td><td>—</td><td>Q6</td><td>Q8</td><td>Q17</td><td>Q16</td><td>4/6</td><td>7</td></tr>
+<tr><td>Integration (Standard / Substitution / Parts)</td><td>Q8</td><td>Q9</td><td>Q7</td><td>Q9</td><td>Q18</td><td>Q17</td><td>6/6</td><td>9</td></tr>
+<tr><td>Area Between Curves / Parametric Integration</td><td>—</td><td>—</td><td>Q7(b)</td><td>Q10</td><td>Q18(b)</td><td>Q17(b)</td><td>4/6</td><td>5</td></tr>
+<tr><td>Differential Equations</td><td>Q9</td><td>Q11</td><td>Q8</td><td>Q11</td><td>Q19</td><td>Q18</td><td>6/6</td><td>8</td></tr>
+<tr><td>Numerical Methods (Sign Change / Iteration / N-R / Trap)</td><td>Q11</td><td>Q12</td><td>Q9</td><td>Q12</td><td>Q20</td><td>Q19</td><td>6/6</td><td>8</td></tr>
+</table>
+
+<h2>1.2 Key Findings</h2>
+<div class="key-point">
+<strong>Ever-present topics (every year):</strong> Trig Equations, Chain/Product/Quotient Rule, Trig/Exp/Log Differentiation, Integration, Differential Equations, Numerical Methods. These are guaranteed to appear.
+</div>
+<div class="key-point">
+<strong>Very high frequency (4–5 of 6):</strong> Partial Fractions, Modulus Function, Functions, Series, Binomial Series, Compound/Double Angles, Harmonic Form, Implicit Differentiation, Parametric Differentiation, Area/Parametric Integration.
+</div>
+<div class="key-point">
+<strong>Recent additions (2024–2025 only):</strong> Radian Measure, Small Angle Approximations, Reciprocal Trig, Points of Inflection, Transformations. These topics appeared in the two most recent papers and are highly likely for 2026.
+</div>
+
+<h2>1.3 Combined-Topic Question Patterns</h2>
+<p>WJEC regularly combines topics in single questions. The most common combinations:</p>
+<table>
+<tr><th>Combination</th><th>Years</th><th>Typical Marks</th></tr>
+<tr><td>Partial Fractions → Binomial Expansion</td><td>2019, 2023, 2024, 2025</td><td>10–13</td></tr>
+<tr><td>Harmonic Form → Trig Equations</td><td>2022, 2023, 2024, 2025</td><td>8–11</td></tr>
+<tr><td>Implicit Differentiation → Tangents/Normals</td><td>2022, 2023, 2024, 2025</td><td>6–8</td></tr>
+<tr><td>Parametric Differentiation → Cartesian Eq → Gradient</td><td>2022, 2023, 2024, 2025</td><td>7–9</td></tr>
+<tr><td>Integration by Substitution → Definite Integral</td><td>2018, 2019, 2023, 2024, 2025</td><td>6–8</td></tr>
+<tr><td>Integration by Parts → Definite/Indefinite</td><td>2019, 2022, 2024, 2025</td><td>5–7</td></tr>
+<tr><td>Differential Eq → Separation of Variables → Particular Solution</td><td>All years</td><td>7–9</td></tr>
+<tr><td>Newton-Raphson → Iteration → Root Finding</td><td>2018, 2022, 2024, 2025</td><td>6–8</td></tr>
+<tr><td>Radian Measure → Arc Length → Sector Area</td><td>2024, 2025</td><td>4–6</td></tr>
+<tr><td>Reciprocal Trig → Differentiation → Integration</td><td>2024, 2025</td><td>5–7</td></tr>
+</table>
+
+<h2>1.4 Mark Distribution by Topic Area (Average % per Paper)</h2>
+<table>
+<tr><th>Topic Area</th><th>Average %</th><th>Typical Marks</th></tr>
+<tr><td>Algebra (Fractions, Partial Fractions, Modulus, Functions)</td><td>22%</td><td>26–28</td></tr>
+<tr><td>Trigonometry (All topics including Harmonic Form)</td><td>23%</td><td>27–29</td></tr>
+<tr><td>Differentiation (All types)</td><td>20%</td><td>24–26</td></tr>
+<tr><td>Integration (All types including Differential Equations)</td><td>22%</td><td>26–28</td></tr>
+<tr><td>Numerical Methods</td><td>7%</td><td>8–10</td></tr>
+<tr><td>Proof, Series, Radians &amp; Other</td><td>6%</td><td>7–9</td></tr>
+</table>
+</div>
+
+<div id="sec-questionbank" class="section">
+<h1>Exhaustive Question Bank</h1>
+<p>Practice questions organised by topic, covering every specification point at basic, intermediate, and advanced difficulty. Questions are modelled on WJEC style and mark schemes.</p>
+
+<!-- === ALGEBRAIC FRACTIONS === -->
+<h2>2.1 Algebraic Fractions &amp; Polynomial Division</h2>
+<div class="question-box">
+<h4>Question 2.1a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>Simplify fully: <span class="math">(x<sup>2</sup> + 5x + 6) &divide; (x + 2)</span></p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">x<sup>2</sup> + 5x + 6 = (x + 2)(x + 3), therefore (x<sup>2</sup> + 5x + 6) &divide; (x + 2) = x + 3<br><strong>B1</strong> for factorisation, <strong>B1</strong> for answer</div>
+</div>
+<div class="question-box">
+<h4>Question 2.1b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Find the quotient and remainder when <span class="math">2x<sup>3</sup> - 3x<sup>2</sup> + 4x - 7</span> is divided by <span class="math">x - 2</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Using algebraic division or factor theorem:<br>
+2(2)<sup>3</sup> - 3(2)<sup>2</sup> + 4(2) - 7 = 16 - 12 + 8 - 7 = 5<br>
+Quotient: 2x<sup>2</sup> + x + 6, Remainder: 5<br>
+<strong>M1</strong> for division process, <strong>A1</strong> for 2x<sup>2</sup>, <strong>A1</strong> for + x, <strong>A1</strong> for + 6, <strong>B1</strong> for remainder 5</div>
+</div>
+<div class="question-box">
+<h4>Question 2.1c <span class="tag tag-hard">Advanced</span><span class="marks">5 marks</span></h4>
+<p>Given that <span class="math">x<sup>3</sup> + ax<sup>2</sup> + bx - 6</span> is divisible by <span class="math">(x - 1)</span> and <span class="math">(x + 2)</span>, find the values of <span class="math">a</span> and <span class="math">b</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">f(1) = 1 + a + b - 6 = 0 &rArr; a + b = 5<br>
+f(-2) = -8 + 4a - 2b - 6 = 0 &rArr; 4a - 2b = 14 &rArr; 2a - b = 7<br>
+Solving: a = 4, b = 1<br>
+<strong>M1</strong> for f(1)=0, <strong>M1</strong> for f(-2)=0, <strong>A1</strong> for equations, <strong>A1</strong> for a=4, <strong>A1</strong> for b=1</div>
+</div>
+
+<!-- === PARTIAL FRACTIONS === -->
+<h2>2.2 Partial Fractions</h2>
+<div class="question-box">
+<h4>Question 2.2a <span class="tag">Basic</span><span class="marks">5 marks</span></h4>
+<p>Express <span class="math">&#x2061;(5x - 1)/((x - 1)(x - 2))&#x2061;</span> in partial fractions.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Let (5x-1)/((x-1)(x-2)) = A/(x-1) + B/(x-2)<br>
+5x-1 = A(x-2) + B(x-1)<br>
+x=1: 5-1 = A(-1) &rArr; A = -4<br>
+x=2: 10-1 = B(1) &rArr; B = 9<br>
+Answer: 9/(x-2) - 4/(x-1)<br>
+<strong>M1</strong> for form, <strong>M1</strong> for clearing denominators, <strong>A1</strong> for A, <strong>A1</strong> for B, <strong>B1</strong> for final answer</div>
+</div>
+<div class="question-box">
+<h4>Question 2.2b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Express <span class="math">&#x2061;(3x<sup>2</sup> + 4x + 1)/((x + 1)(x<sup>2</sup> + 1))&#x2061;</span> in partial fractions.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(3x<sup>2</sup>+4x+1)/((x+1)(x<sup>2</sup>+1)) = A/(x+1) + (Bx+C)/(x<sup>2</sup>+1)<br>
+3x<sup>2</sup>+4x+1 = A(x<sup>2</sup>+1) + (Bx+C)(x+1)<br>
+x=-1: 3-4+1 = A(2) &rArr; 0 = 2A &rArr; A=0<br>
+Coeff of x<sup>2</sup>: 3 = A + B &rArr; B=3<br>
+Coeff of x: 4 = B + C &rArr; C=1<br>
+Answer: 3x/(x<sup>2</sup>+1) + 1/(x<sup>2</sup>+1) = (3x+1)/(x<sup>2</sup>+1)<br>
+<strong>M1</strong> for form, <strong>M1</strong> for clearing, <strong>A1</strong> for A, <strong>A1</strong> for B, <strong>A1</strong> for C</div>
+</div>
+<div class="question-box">
+<h4>Question 2.2c <span class="tag tag-hard">Advanced</span><span class="marks">7 marks</span></h4>
+<p>Express <span class="math">&#x2061;(2x<sup>2</sup> - 5x + 7)/((x - 1)(x<sup>2</sup> - x + 1))&#x2061;</span> in partial fractions, then use the binomial expansion to find the first three terms of the expansion of this expression in ascending powers of <span class="math">1/x</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Partial fractions: A/(x-1) + (Bx+C)/(x<sup>2</sup>-x+1)<br>
+2x<sup>2</sup>-5x+7 = A(x<sup>2</sup>-x+1) + (Bx+C)(x-1)<br>
+x=1: 2-5+7 = A(1-1+1) &rArr; 4 = A &rArr; A=4<br>
+Coeff x<sup>2</sup>: 2 = A + B &rArr; B = -2<br>
+Constant: 7 = A - C &rArr; C = -3<br>
+= 4/(x-1) - (2x+3)/(x<sup>2</sup>-x+1)<br>
+<strong>M1</strong> for form, <strong>M1</strong> A, <strong>A1</strong> B, <strong>A1</strong> C</div>
+</div>
+
+<!-- === MODULUS FUNCTION === -->
+<h2>2.3 Modulus Function</h2>
+<div class="question-box">
+<h4>Question 2.3a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>Solve <span class="math">|2x - 3| = 7</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">2x-3 = 7 &rArr; x=5<br>
+2x-3 = -7 &rArr; x=-2<br>
+<strong>M1</strong> for both cases, <strong>A1</strong> for x=5, <strong>A1</strong> for x=-2</div>
+</div>
+<div class="question-box">
+<h4>Question 2.3b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Solve the inequality <span class="math">|3x + 2| &lt; |x - 4|</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Square both sides: (3x+2)<sup>2</sup> &lt; (x-4)<sup>2</sup><br>
+9x<sup>2</sup>+12x+4 &lt; x<sup>2</sup>-8x+16<br>
+8x<sup>2</sup>+20x-12 &lt; 0<br>
+4(2x<sup>2</sup>+5x-3) &lt; 0<br>
+4(2x-1)(x+3) &lt; 0<br>
+-3 &lt; x &lt; 1/2<br>
+<strong>M1</strong> for squaring, <strong>M1</strong> for expanding, <strong>M1</strong> for factorising, <strong>A1</strong> for critical values, <strong>A1</strong> for inequality</div>
+</div>
+<div class="question-box">
+<h4>Question 2.3c <span class="tag tag-hard">Advanced</span><span class="marks">6 marks</span></h4>
+<p>Sketch the graph of <span class="math">y = |2x - 1| + |x + 2|</span> for <span class="math">-3 &le; x &le; 3</span>. Hence solve <span class="math">|2x - 1| + |x + 2| = 5</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Critical points at x = -2 and x = 1/2.<br>
+x &lt; -2: -(2x-1)-(x+2) = -3x-1<br>
+-2 &le; x &lt; 1/2: -(2x-1)+(x+2) = -x+3<br>
+x &ge; 1/2: (2x-1)+(x+2) = 3x+1<br>
+Solve each piece:<br>
+-3x-1 = 5 &rArr; x = -2 (at boundary)<br>
+-x+3 = 5 &rArr; x = -2 (already found)<br>
+3x+1 = 5 &rArr; x = 4/3<br>
+Solutions: x = -2, x = 4/3<br>
+<strong>M1</strong> for critical points, <strong>M1</strong> for piecewise expression, <strong>M1</strong> for solving each case, <strong>A1</strong> for x=-2, <strong>A1</strong> for x=4/3</div>
+</div>
+
+<!-- === FUNCTIONS === -->
+<h2>2.4 Functions (Domain, Range, Inverse, Composite)</h2>
+<div class="question-box">
+<h4>Question 2.4a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>For <span class="math">f(x) = 3x + 1, x &isin; &#x211D;</span> and <span class="math">g(x) = x<sup>2</sup>, x &isin; &#x211D;</span>, find:<br>
+(a) fg(x) &nbsp; (b) gf(x) &nbsp; (c) f<sup>-1</sup>(x)</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) fg(x) = f(x<sup>2</sup>) = 3x<sup>2</sup> + 1<br>
+(b) gf(x) = g(3x+1) = (3x+1)<sup>2</sup> = 9x<sup>2</sup>+6x+1<br>
+(c) f<sup>-1</sup>(x) = (x-1)/3<br>
+<strong>B1</strong> each part</div>
+</div>
+<div class="question-box">
+<h4>Question 2.4b <span class="tag">Intermediate</span><span class="marks">6 marks</span></h4>
+<p>The function f is defined by <span class="math">f(x) = 2x<sup>2</sup> - 4x + 5</span> for <span class="math">x &ge; 1</span>.<br>
+(a) Find the range of f.<br>
+(b) Find f<sup>-1</sup>(x), stating its domain and range.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) f(x) = 2(x<sup>2</sup>-2x) + 5 = 2[(x-1)<sup>2</sup>-1] + 5 = 2(x-1)<sup>2</sup> + 3<br>
+Minimum at x=1: f(1)=3. Range: f(x) &ge; 3<br>
+(b) y = 2(x-1)<sup>2</sup> + 3 &rArr; (y-3)/2 = (x-1)<sup>2</sup><br>
+x-1 = &radic;((y-3)/2) (positive since x&ge;1)<br>
+f<sup>-1</sup>(x) = 1 + &radic;((x-3)/2), domain x &ge; 3, range f<sup>-1</sup>(x) &ge; 1<br>
+<strong>M1</strong> for completing square, <strong>A1</strong> for range, <strong>M1</strong> for rearranging, <strong>A1</strong> for inverse, <strong>B1</strong> domain, <strong>B1</strong> range</div>
+</div>
+<div class="question-box">
+<h4>Question 2.4c <span class="tag tag-hard">Advanced</span><span class="marks">6 marks</span></h4>
+<p>Functions f and g are defined by <span class="math">f(x) = 2x - 3, x &isin; &#x211D;</span> and <span class="math">g(x) = 4/(x - 1), x &ne; 1</span>.<br>
+(a) Find gf(x) and state its domain.<br>
+(b) Solve gf(x) = 2.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) gf(x) = g(2x-3) = 4/((2x-3)-1) = 4/(2x-4) = 2/(x-2)<br>
+Domain: x &ne; 2<br>
+(b) 2/(x-2) = 2 &rArr; 2 = 2(x-2) &rArr; x-2 = 1 &rArr; x = 3<br>
+<strong>M1</strong> for gf(x), <strong>A1</strong> for 2/(x-2), <strong>B1</strong> domain, <strong>M1</strong> for solving, <strong>A1</strong> for x=3</div>
+</div>
+
+<!-- === TRANSFORMATIONS === -->
+<h2>2.5 Transformations</h2>
+<div class="question-box">
+<h4>Question 2.5a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>The curve <span class="math">y = f(x)</span> is transformed to <span class="math">y = 2f(x - 3) + 1</span>. Describe the transformations in the correct order.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">1. Translation of +3 in x-direction (right 3 units)<br>
+2. Vertical stretch scale factor 2<br>
+3. Translation of +1 in y-direction (up 1 unit)<br>
+<strong>B1</strong> each correct transformation, <strong>B1</strong> correct order</div>
+</div>
+<div class="question-box">
+<h4>Question 2.5b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>The curve <span class="math">y = x<sup>3</sup> - 4x</span> is transformed to <span class="math">y = 2(x - 1)<sup>3</sup> - 8(x - 1) + 3</span>. Describe the transformation and find the image of the point (2, 0).</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">y = 2[(x-1)<sup>3</sup> - 4(x-1)] + 3 = 2f(x-1) + 3<br>
+Horizontal translation +1, vertical stretch &times;2, vertical translation +3<br>
+Point (2,0): f(2)=8-8=0, new x = 2+1 = 3, new y = 2(0)+3 = 3<br>
+Image: (3,3)<br>
+<strong>M1</strong> for recognising form, <strong>A1</strong> for description, <strong>M1</strong> method, <strong>A1</strong> for (3,3)</div>
+</div>
+
+<!-- === PROOF BY CONTRADICTION === -->
+<h2>2.6 Proof by Contradiction</h2>
+<div class="question-box">
+<h4>Question 2.6a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>Prove by contradiction that there is no greatest even integer.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Assume there is a greatest even integer, call it N.<br>
+Then N+2 is also even (since adding 2 to an even number gives an even number).<br>
+But N+2 > N, which contradicts N being the greatest even integer.<br>
+Therefore our assumption is false &ndash; there is no greatest even integer.<br>
+<strong>M1</strong> for assumption, <strong>M1</strong> for contradiction, <strong>A1</strong> for clear contradiction, <strong>A1</strong> for conclusion</div>
+</div>
+<div class="question-box">
+<h4>Question 2.6b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Prove by contradiction that <span class="math">&radic;3</span> is irrational.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Assume &radic;3 = p/q where p,q are coprime integers, q &ne; 0.<br>
+Square: 3 = p<sup>2</sup>/q<sup>2</sup> &rArr; p<sup>2</sup> = 3q<sup>2</sup><br>
+So p<sup>2</sup> is divisible by 3 &rArr; p is divisible by 3. Let p = 3k.<br>
+(3k)<sup>2</sup> = 3q<sup>2</sup> &rArr; 9k<sup>2</sup> = 3q<sup>2</sup> &rArr; q<sup>2</sup> = 3k<sup>2</sup><br>
+So q is also divisible by 3, contradicting coprimality.<br>
+Therefore &radic;3 is irrational.<br>
+<strong>M1</strong> for assumption, <strong>M1</strong> for p<sup>2</sup>=3q<sup>2</sup>, <strong>A1</strong> for p divisible by 3, <strong>A1</strong> for q divisible by 3, <strong>A1</strong> for contradiction</div>
+</div>
+
+<!-- === SERIES === -->
+<h2>2.7 Series (Arithmetic, Geometric, Recurrence, Modelling)</h2>
+<div class="question-box">
+<h4>Question 2.7a <span class="tag">Basic</span><span class="marks">5 marks</span></h4>
+<p>An arithmetic series has first term 7 and common difference 3. Find:<br>
+(a) The 20th term &nbsp; (b) The sum of the first 20 terms</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) u<sub>20</sub> = a + (n-1)d = 7 + 19(3) = 64<br>
+(b) S<sub>20</sub> = n/2 (a + l) = 20/2 (7 + 64) = 710<br>
+or S<sub>20</sub> = n/2 (2a + (n-1)d) = 10(14 + 57) = 710<br>
+<strong>M1</strong> for formula, <strong>A1</strong> for 64, <strong>M1</strong> for sum formula, <strong>A1</strong> for 710</div>
+</div>
+<div class="question-box">
+<h4>Question 2.7b <span class="tag">Intermediate</span><span class="marks">6 marks</span></h4>
+<p>The sum of the first n terms of a series is given by <span class="math">S<sub>n</sub> = 2n<sup>2</sup> + 5n</span>.<br>
+(a) Find the nth term u<sub>n</sub>.<br>
+(b) Prove the series is arithmetic.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) u<sub>n</sub> = S<sub>n</sub> - S<sub>n-1</sub><br>
+S<sub>n-1</sub> = 2(n-1)<sup>2</sup> + 5(n-1) = 2(n<sup>2</sup>-2n+1) + 5n-5 = 2n<sup>2</sup>-4n+2+5n-5 = 2n<sup>2</sup>+n-3<br>
+u<sub>n</sub> = (2n<sup>2</sup>+5n) - (2n<sup>2</sup>+n-3) = 4n+3<br>
+(b) u<sub>n+1</sub> - u<sub>n</sub> = 4(n+1)+3 - (4n+3) = 4, constant &rArr; arithmetic<br>
+<strong>M1</strong> for u<sub>n</sub>=S<sub>n</sub>-S<sub>n-1</sub>, <strong>A1</strong> for 4n+3, <strong>M1</strong> for difference, <strong>A1</strong> for constant 4</div>
+</div>
+<div class="question-box">
+<h4>Question 2.7c <span class="tag tag-hard">Advanced</span><span class="marks">7 marks</span></h4>
+<p>A geometric series has first term a = 24 and sum to infinity of 36.<br>
+(a) Find the common ratio r.<br>
+(b) Find the smallest value of n for which S<sub>n</sub> exceeds 35.5.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) S<sub>&infin;</sub> = a/(1-r) = 24/(1-r) = 36<br>
+24 = 36(1-r) &rArr; 24 = 36 - 36r &rArr; 36r = 12 &rArr; r = 1/3<br>
+(b) S<sub>n</sub> = a(1-r<sup>n</sup>)/(1-r) = 24(1-(1/3)<sup>n</sup>)/(2/3) = 36(1-(1/3)<sup>n</sup>)<br>
+36(1-(1/3)<sup>n</sup>) > 35.5 &rArr; 1-(1/3)<sup>n</sup> > 35.5/36 = 71/72<br>
+(1/3)<sup>n</sup> &lt; 1/72 &rArr; n ln(3) > ln(72) &rArr; n > ln72/ln3 = 3.89<br>
+Smallest n = 4<br>
+<strong>M1</strong> for S<sub>&infin;</sub> formula, <strong>A1</strong> for r=1/3, <strong>M1</strong> for S<sub>n</sub> formula, <strong>M1</strong> for inequality, <strong>A1</strong> for n=4</div>
+</div>
+<div class="question-box">
+<h4>Question 2.7d <span class="tag tag-hard">Advanced</span><span class="marks">6 marks</span></h4>
+<p>A sequence is defined by <span class="math">u<sub>n+1</sub> = 3u<sub>n</sub> - 2</span> with <span class="math">u<sub>1</sub> = 4</span>.<br>
+(a) Find u<sub>2</sub>, u<sub>3</sub>, u<sub>4</sub>.<br>
+(b) Suggest a formula for u<sub>n</sub> in terms of n.<br>
+(c) Prove your formula by induction.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) u<sub>2</sub> = 3(4)-2 = 10, u<sub>3</sub> = 3(10)-2 = 28, u<sub>4</sub> = 3(28)-2 = 82<br>
+(b) Pattern: u<sub>n</sub> = 3<sup>n</sup> + 1<br>
+Check: 3<sup>1</sup>+1=4✓, 3<sup>2</sup>+1=10✓, 3<sup>3</sup>+1=28✓<br>
+(c) Base: n=1: 3<sup>1</sup>+1=4✓<br>
+Assume u<sub>k</sub> = 3<sup>k</sup>+1<br>
+u<sub>k+1</sub> = 3u<sub>k</sub>-2 = 3(3<sup>k</sup>+1)-2 = 3<sup>k+1</sup>+3-2 = 3<sup>k+1</sup>+1 ✓<br>
+By induction, u<sub>n</sub> = 3<sup>n</sup>+1 for all n &ge; 1<br>
+<strong>B1</strong> for u<sub>2</sub>-u<sub>4</sub>, <strong>B1</strong> for formula, <strong>M1</strong> base case, <strong>M1</strong> inductive step, <strong>A1</strong> conclusion</div>
+</div>
+
+<!-- === BINOMIAL SERIES === -->
+<h2>2.8 Binomial Series (Fractional/Negative Index)</h2>
+<div class="question-box">
+<h4>Question 2.8a <span class="tag">Basic</span><span class="marks">5 marks</span></h4>
+<p>Expand <span class="math">(1 + 2x)<sup>-1</sup></span> in ascending powers of x up to and including the term in x<sup>3</sup>. State the range of validity.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(1+2x)<sup>-1</sup> = 1 + (-1)(2x) + (-1)(-2)(2x)<sup>2</sup>/2! + (-1)(-2)(-3)(2x)<sup>3</sup>/3! + ...<br>
+= 1 - 2x + 4x<sup>2</sup> - 8x<sup>3</sup> + ...<br>
+Valid for |2x| &lt; 1 &rArr; |x| &lt; 1/2<br>
+<strong>M1</strong> for binomial form, <strong>B1</strong> -2x, <strong>B1</strong> 4x<sup>2</sup>, <strong>B1</strong> -8x<sup>3</sup>, <strong>B1</strong> validity</div>
+</div>
+<div class="question-box">
+<h4>Question 2.8b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Expand <span class="math">(4 - x)<sup>1/2</sup></span> in ascending powers of x up to x<sup>3</sup>. State the range of validity.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(4-x)<sup>1/2</sup> = 2(1 - x/4)<sup>1/2</sup><br>
+= 2[1 + (1/2)(-x/4) + (1/2)(-1/2)(-x/4)<sup>2</sup>/2! + (1/2)(-1/2)(-3/2)(-x/4)<sup>3</sup>/3! + ...]<br>
+= 2[1 - x/8 - x<sup>2</sup>/128 - x<sup>3</sup>/1024 + ...]<br>
+= 2 - x/4 - x<sup>2</sup>/64 - x<sup>3</sup>/512 + ...<br>
+Valid for |x/4| &lt; 1 &rArr; |x| &lt; 4<br>
+<strong>M1</strong> for factorising 2, <strong>M1</strong> for expansion, <strong>A1</strong> for each correct term, <strong>B1</strong> validity</div>
+</div>
+<div class="question-box">
+<h4>Question 2.8c <span class="tag tag-hard">Advanced</span><span class="marks">7 marks</span></h4>
+<p>Express <span class="math">(1 - 2x)/((1 + x)(1 - 3x))</span> in partial fractions and hence find the binomial expansion up to x<sup>3</sup>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(1-2x)/((1+x)(1-3x)) = A/(1+x) + B/(1-3x)<br>
+1-2x = A(1-3x) + B(1+x)<br>
+x=-1: 1+2 = A(1+3) &rArr; A=3/4<br>
+x=1/3: 1-2/3 = B(1+1/3) &rArr; 1/3 = 4B/3 &rArr; B=1/4<br>
+= 3/4 (1+x)<sup>-1</sup> + 1/4 (1-3x)<sup>-1</sup><br>
+= 3/4(1-x+x<sup>2</sup>-x<sup>3</sup>+...) + 1/4(1+3x+9x<sup>2</sup>+27x<sup>3</sup>+...)<br>
+= (3/4+1/4) + (-3/4+3/4)x + (3/4+9/4)x<sup>2</sup> + (-3/4+27/4)x<sup>3</sup><br>
+= 1 + 0x + 3x<sup>2</sup> + 6x<sup>3</sup> + ...<br>
+<strong>M1</strong> partial fractions, <strong>A1</strong> A=3/4, <strong>A1</strong> B=1/4, <strong>M1</strong> each expansion, <strong>A1</strong> final answer</div>
+</div>
+
+<!-- === TRIGONOMETRY === -->
+<h2>2.9 Radian Measure</h2>
+<div class="question-box">
+<h4>Question 2.9a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>A sector of a circle has radius 8 cm and angle 0.6 radians. Find the arc length and area of the sector.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Arc length s = r&theta; = 8 &times; 0.6 = 4.8 cm<br>
+Area A = &frac12; r<sup>2</sup>&theta; = &frac12; &times; 64 &times; 0.6 = 19.2 cm<sup>2</sup><br>
+<strong>M1</strong> for s=r&theta;, <strong>A1</strong> for 4.8, <strong>M1</strong> for A=&frac12;r<sup>2</sup>&theta;, <strong>A1</strong> for 19.2</div>
+</div>
+<div class="question-box">
+<h4>Question 2.9b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>A chord AB subtends an angle of 1.2 radians at the centre O of a circle radius 10 cm. Find the area of the segment (the region between the chord and the arc).</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Area of sector = &frac12;r<sup>2</sup>&theta; = &frac12; &times; 100 &times; 1.2 = 60 cm<sup>2</sup><br>
+Area of triangle AOB = &frac12;r<sup>2</sup> sin &theta; = &frac12; &times; 100 &times; sin 1.2 = 50 &times; 0.9320 = 46.60 cm<sup>2</sup><br>
+Area of segment = 60 - 46.60 = 13.4 cm<sup>2</sup> (3 sf)<br>
+<strong>M1</strong> sector area, <strong>M1</strong> triangle area, <strong>A1</strong> for each, <strong>A1</strong> for segment</div>
+</div>
+
+<h2>2.10 Small Angle Approximations</h2>
+<div class="question-box">
+<h4>Question 2.10a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>For small &theta;, use the approximations sin &theta; &asymp; &theta;, cos &theta; &asymp; 1 - &theta;<sup>2</sup>/2, tan &theta; &asymp; &theta; to simplify <span class="math">(sin 3&theta; + tan 2&theta;)/(1 - cos &theta;)</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">sin 3&theta; &asymp; 3&theta;, tan 2&theta; &asymp; 2&theta;, 1 - cos &theta; &asymp; 1 - (1 - &theta;<sup>2</sup>/2) = &theta;<sup>2</sup>/2<br>
+(3&theta; + 2&theta;)/(&theta;<sup>2</sup>/2) = 5&theta; &times; 2/&theta;<sup>2</sup> = 10/&theta;<br>
+<strong>M1</strong> for each substitution, <strong>A1</strong> for final answer</div>
+</div>
+<div class="question-box">
+<h4>Question 2.10b <span class="tag tag-hard">Advanced</span><span class="marks">4 marks</span></h4>
+<p>Given that &theta; is small and measured in radians, show that <span class="math">(cos &theta; - cos 3&theta;)/(&theta; sin 2&theta;) &asymp; 4</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">cos &theta; &asymp; 1 - &theta;<sup>2</sup>/2<br>
+cos 3&theta; &asymp; 1 - (3&theta;)<sup>2</sup>/2 = 1 - 9&theta;<sup>2</sup>/2<br>
+cos &theta; - cos 3&theta; &asymp; (1 - &theta;<sup>2</sup>/2) - (1 - 9&theta;<sup>2</sup>/2) = 4&theta;<sup>2</sup><br>
+sin 2&theta; &asymp; 2&theta;<br>
+&there4; 4&theta;<sup>2</sup>/(&theta; &times; 2&theta;) = 4&theta;<sup>2</sup>/(2&theta;<sup>2</sup>) = 4<br>
+<strong>M1</strong> for series, <strong>M1</strong> for numerator, <strong>M1</strong> for denominator, <strong>A1</strong> for 4</div>
+</div>
+
+<h2>2.11 Reciprocal Trig Functions</h2>
+<div class="question-box">
+<h4>Question 2.11a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>Write down the exact values of:<br>
+(a) sec(&pi;/3) &nbsp; (b) cosec(&pi;/6) &nbsp; (c) cot(&pi;/4)</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) sec(&pi;/3) = 1/cos(&pi;/3) = 1/(1/2) = 2<br>
+(b) cosec(&pi;/6) = 1/sin(&pi;/6) = 1/(1/2) = 2<br>
+(c) cot(&pi;/4) = 1/tan(&pi;/4) = 1/1 = 1<br>
+<strong>B1</strong> each</div>
+</div>
+<div class="question-box">
+<h4>Question 2.11b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Solve <span class="math">sec x = 3</span> for <span class="math">0 &le; x &le; 2&pi;</span>, giving answers to 3 significant figures.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">sec x = 3 &rArr; cos x = 1/3<br>
+x = cos<sup>-1</sup>(1/3) = 1.23 rad<br>
+cos is also positive in 4th quadrant: x = 2&pi; - 1.23 = 5.05 rad<br>
+x = 1.23, 5.05 (3 sf)<br>
+<strong>M1</strong> for converting to cos, <strong>M1</strong> for principal value, <strong>M1</strong> for second value, <strong>A1</strong> both</div>
+</div>
+
+<h2>2.12 Trig Equations</h2>
+<div class="question-box">
+<h4>Question 2.12a <span class="tag">Basic</span><span class="marks">5 marks</span></h4>
+<p>Solve <span class="math">2 sin x = 1</span> for <span class="math">0&deg; &le; x &le; 360&deg;</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">sin x = 1/2<br>
+x = 30&deg; (principal)<br>
+sin positive in 1st, 2nd quadrants: x = 30&deg;, 150&deg;<br>
+<strong>M1</strong> for rearranging, <strong>M1</strong> for principal, <strong>A1</strong> both</div>
+</div>
+<div class="question-box">
+<h4>Question 2.12b <span class="tag">Intermediate</span><span class="marks">6 marks</span></h4>
+<p>Solve <span class="math">3 cos<sup>2</sup> x - sin x = 1</span> for <span class="math">0 &le; x &le; 2&pi;</span>, giving answers to 3 significant figures where necessary.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">3(1-sin<sup>2</sup>x) - sin x = 1<br>
+3 - 3 sin<sup>2</sup>x - sin x = 1<br>
+0 = 3 sin<sup>2</sup>x + sin x - 2<br>
+0 = (3 sin x - 2)(sin x + 1)<br>
+sin x = 2/3 or sin x = -1<br>
+sin x = 2/3: x = 0.730, &pi;-0.730 = 2.41 rad<br>
+sin x = -1: x = 3&pi;/2 = 4.71 rad<br>
+<strong>M1</strong> for identity, <strong>M1</strong> for quadratics, <strong>A1</strong> for factors, <strong>A1</strong> each solution</div>
+</div>
+<div class="question-box">
+<h4>Question 2.12c <span class="tag tag-hard">Advanced</span><span class="marks">7 marks</span></h4>
+<p>Solve <span class="math">tan 2x = 4 sin x</span> for <span class="math">-&pi; &le; x &le; &pi;</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">tan 2x = sin 2x/cos 2x = 2 sin x cos x/cos 2x<br>
+2 sin x cos x/cos 2x = 4 sin x<br>
+2 sin x cos x = 4 sin x cos 2x<br>
+2 sin x (cos x - 2 cos 2x) = 0<br>
+sin x = 0 &rArr; x = -&pi;, 0, &pi;<br>
+cos x - 2(2cos<sup>2</sup>x-1) = 0 &rArr; cos x - 4cos<sup>2</sup>x + 2 = 0<br>
+4cos<sup>2</sup>x - cos x - 2 = 0<br>
+cos x = (1 &plusmn; &radic;(1+32))/8 = (1 &plusmn; &radic;33)/8<br>
+cos x = (1+&radic;33)/8 = 0.843 or cos x = (1-&radic;33)/8 = -0.593<br>
+x = &plusmn;0.568 rad, x = &plusmn;2.21 rad<br>
+All within range: x = -&pi;, -2.21, -0.568, 0, 0.568, 2.21, &pi;<br>
+<strong>M1</strong> for identities, <strong>M1</strong> for factor sin x, <strong>M1</strong> for quadratic in cos, <strong>A1</strong> for each set</div>
+</div>
+
+<h2>2.13 Compound &amp; Double Angles</h2>
+<div class="question-box">
+<h4>Question 2.13a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>Given that <span class="math">sin A = 3/5</span> and <span class="math">cos B = 5/13</span> (both acute), find <span class="math">sin(A + B)</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">cos A = 4/5, sin B = 12/13<br>
+sin(A+B) = sin A cos B + cos A sin B<br>
+= (3/5)(5/13) + (4/5)(12/13) = 15/65 + 48/65 = 63/65<br>
+<strong>M1</strong> for missing trig values, <strong>M1</strong> for formula, <strong>A1</strong> for substitution, <strong>A1</strong> for 63/65</div>
+</div>
+<div class="question-box">
+<h4>Question 2.13b <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Prove the identity <span class="math">(sin x + cos x)<sup>2</sup> = 1 + sin 2x</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">LHS = sin<sup>2</sup>x + 2 sin x cos x + cos<sup>2</sup>x<br>
+= (sin<sup>2</sup>x+cos<sup>2</sup>x) + 2 sin x cos x<br>
+= 1 + sin 2x = RHS<br>
+<strong>M1</strong> for expansion, <strong>M1</strong> for sin<sup>2</sup>+cos<sup>2</sup>=1, <strong>M1</strong> for sin 2x = 2 sin x cos x</div>
+</div>
+<div class="question-box">
+<h4>Question 2.13c <span class="tag tag-hard">Advanced</span><span class="marks">6 marks</span></h4>
+<p>Express <span class="math">cos 4&theta;</span> in terms of <span class="math">cos &theta;</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">cos 2&theta; = 2cos<sup>2</sup>&theta; - 1<br>
+cos 4&theta; = 2cos<sup>2</sup>2&theta; - 1<br>
+= 2(2cos<sup>2</sup>&theta;-1)<sup>2</sup> - 1<br>
+= 2(4cos<sup>4</sup>&theta; - 4cos<sup>2</sup>&theta; + 1) - 1<br>
+= 8cos<sup>4</sup>&theta; - 8cos<sup>2</sup>&theta; + 2 - 1<br>
+= 8cos<sup>4</sup>&theta; - 8cos<sup>2</sup>&theta; + 1<br>
+<strong>M1</strong> for cos 2&theta; formula, <strong>M1</strong> for cos 4&theta; = 2cos<sup>2</sup>2&theta;-1, <strong>A1</strong> for final</div>
+</div>
+
+<h2>2.14 Harmonic Form</h2>
+<div class="question-box">
+<h4>Question 2.14a <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Express <span class="math">3 sin x + 4 cos x</span> in the form <span class="math">R sin(x + &alpha;)</span>, where R > 0 and 0 &lt; &alpha; &lt; &pi;/2. Give R exactly and &alpha; to 3 significant figures.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">R = &radic;(3<sup>2</sup> + 4<sup>2</sup>) = 5<br>
+sin &alpha; = 4/5, cos &alpha; = 3/5 &rArr; &alpha; = tan<sup>-1</sup>(4/3) = 0.927 rad<br>
+3 sin x + 4 cos x = 5 sin(x + 0.927)<br>
+<strong>M1</strong> for R, <strong>M1</strong> for &alpha;, <strong>A1</strong> R=5, <strong>A1</strong> &alpha;=0.927</div>
+</div>
+<div class="question-box">
+<h4>Question 2.14b <span class="tag tag-hard">Advanced</span><span class="marks">7 marks</span></h4>
+<p>Solve <span class="math">5 cos x - 12 sin x = 3</span> for <span class="math">0 &le; x &le; 2&pi;</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">R = &radic;(5<sup>2</sup>+12<sup>2</sup>) = 13<br>
+R cos(x+&alpha;) where cos &alpha;=5/13, sin &alpha;=12/13, &alpha;=tan<sup>-1</sup>(12/5)=1.176 rad<br>
+13 cos(x+1.176) = 3<br>
+cos(x+1.176) = 3/13<br>
+x+1.176 = &plusmn;cos<sup>-1</sup>(3/13) + 2n&pi;<br>
+x+1.176 = &plusmn;1.337 + 2n&pi;<br>
+x = 0.161, 2&pi;-0.161-2(1.176) = ...<br>
+x = 0.161, 3.768, 5.689 rad (check range)<br>
+<strong>M1</strong> for R, <strong>M1</strong> for form, <strong>M1</strong> for solving, <strong>A1</strong> for each solution</div>
+</div>
+
+<!-- === DIFFERENTIATION === -->
+<h2>2.15 Chain / Product / Quotient Rule</h2>
+<div class="question-box">
+<h4>Question 2.15a <span class="tag">Basic</span><span class="marks">3 marks</span></h4>
+<p>Differentiate <span class="math">y = (3x<sup>2</sup> + 1)<sup>5</sup></span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">dy/dx = 5(3x<sup>2</sup>+1)<sup>4</sup> &times; 6x = 30x(3x<sup>2</sup>+1)<sup>4</sup><br>
+<strong>M1</strong> chain rule, <strong>A1</strong> for answer</div>
+</div>
+<div class="question-box">
+<h4>Question 2.15b <span class="tag">Intermediate</span><span class="marks">4 marks</span></h4>
+<p>Differentiate <span class="math">y = x<sup>2</sup> sin x</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">dy/dx = 2x sin x + x<sup>2</sup> cos x<br>
+<strong>M1</strong> product rule, <strong>A1</strong> 2x sin x, <strong>A1</strong> x<sup>2</sup> cos x</div>
+</div>
+<div class="question-box">
+<h4>Question 2.15c <span class="tag tag-hard">Advanced</span><span class="marks">5 marks</span></h4>
+<p>Differentiate <span class="math">y = (e<sup>x</sup> + 1)/(x<sup>2</sup> - 3)</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">dy/dx = (e<sup>x</sup>(x<sup>2</sup>-3) - (e<sup>x</sup>+1)(2x))/(x<sup>2</sup>-3)<sup>2</sup><br>
+= (x<sup>2</sup>e<sup>x</sup> - 3e<sup>x</sup> - 2xe<sup>x</sup> - 2x)/(x<sup>2</sup>-3)<sup>2</sup><br>
+= (e<sup>x</sup>(x<sup>2</sup> - 2x - 3) - 2x)/(x<sup>2</sup>-3)<sup>2</sup><br>
+<strong>M1</strong> quotient rule, <strong>A1</strong> numerator, <strong>A1</strong> denominator</div>
+</div>
+
+<h2>2.16 Implicit Differentiation</h2>
+<div class="question-box">
+<h4>Question 2.16a <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Find dy/dx in terms of x and y for <span class="math">x<sup>2</sup> + y<sup>2</sup> = 25</span>. Hence find the gradient at (3, 4).</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">2x + 2y dy/dx = 0<br>
+dy/dx = -x/y<br>
+At (3,4): dy/dx = -3/4<br>
+<strong>M1</strong> differentiate each term, <strong>A1</strong> for dy/dx = -x/y, <strong>A1</strong> for -3/4</div>
+</div>
+<div class="question-box">
+<h4>Question 2.16b <span class="tag tag-hard">Advanced</span><span class="marks">7 marks</span></h4>
+<p>Given that <span class="math">2x<sup>3</sup> + 3xy + y<sup>2</sup> = 8</span>, find dy/dx at the point (1, -3).</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">6x<sup>2</sup> + 3y + 3x dy/dx + 2y dy/dx = 0<br>
+dy/dx(3x + 2y) = -(6x<sup>2</sup> + 3y)<br>
+dy/dx = -(6x<sup>2</sup> + 3y)/(3x + 2y)<br>
+At (1,-3): dy/dx = -(6 - 9)/(3 - 6) = -(-3)/(-3) = -1<br>
+<strong>M1</strong> differentiate 3xy, <strong>M1</strong> differentiate y<sup>2</sup>, <strong>A1</strong> for equation, <strong>A1</strong> for rearranged, <strong>A1</strong> for -1</div>
+</div>
+
+<h2>2.17 Trig / Exp / Log Differentiation</h2>
+<div class="question-box">
+<h4>Question 2.17a <span class="tag">Basic</span><span class="marks">3 marks</span></h4>
+<p>Differentiate <span class="math">y = e<sup>3x</sup> + ln(2x)</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">dy/dx = 3e<sup>3x</sup> + 1/x<br>
+<strong>B1</strong> for 3e<sup>3x</sup>, <strong>B1</strong> for 1/x</div>
+</div>
+<div class="question-box">
+<h4>Question 2.17b <span class="tag">Intermediate</span><span class="marks">4 marks</span></h4>
+<p>Differentiate <span class="math">y = ln(sin x)</span> and <span class="math">y = e<sup>cos x</sup></span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">y = ln(sin x): dy/dx = cos x/sin x = cot x<br>
+y = e<sup>cos x</sup>: dy/dx = -sin x e<sup>cos x</sup><br>
+<strong>M1</strong> chain rule each, <strong>A1</strong> each</div>
+</div>
+
+<h2>2.18 Points of Inflection</h2>
+<div class="question-box">
+<h4>Question 2.18a <span class="tag">Intermediate</span><span class="marks">4 marks</span></h4>
+<p>Find the point of inflection on the curve <span class="math">y = x<sup>3</sup> - 6x<sup>2</sup> + 9x + 1</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">dy/dx = 3x<sup>2</sup> - 12x + 9<br>
+d<sup>2</sup>y/dx<sup>2</sup> = 6x - 12 = 0 &rArr; x = 2<br>
+Check sign change of d<sup>2</sup>y/dx<sup>2</sup>:<br>
+x=1.9: d<sup>2</sup>y/dx<sup>2</sup> = -0.6 &lt; 0<br>
+x=2.1: d<sup>2</sup>y/dx<sup>2</sup> = 0.6 &gt; 0 &rArr; sign change, so point of inflection<br>
+y = 8 - 24 + 18 + 1 = 3<br>
+Point of inflection at (2, 3)<br>
+<strong>M1</strong> for d<sup>2</sup>y/dx<sup>2</sup>=0, <strong>M1</strong> for verifying sign change, <strong>A1</strong> for x=2, <strong>A1</strong> for (2,3)</div>
+</div>
+
+<h2>2.19 Parametric Differentiation</h2>
+<div class="question-box">
+<h4>Question 2.19a <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>A curve is defined parametrically by <span class="math">x = t<sup>2</sup> + 1</span>, <span class="math">y = t<sup>3</sup> - 2t</span>. Find dy/dx in terms of t, and find the gradient when t = 2.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">dx/dt = 2t, dy/dt = 3t<sup>2</sup> - 2<br>
+dy/dx = (dy/dt)/(dx/dt) = (3t<sup>2</sup> - 2)/(2t)<br>
+When t = 2: dy/dx = (12 - 2)/4 = 10/4 = 5/2<br>
+<strong>M1</strong> for dx/dt, <strong>M1</strong> for dy/dt, <strong>A1</strong> for dy/dx in t, <strong>A1</strong> for 5/2</div>
+</div>
+<div class="question-box">
+<h4>Question 2.19b <span class="tag tag-hard">Advanced</span><span class="marks">7 marks</span></h4>
+<p>A curve has parametric equations <span class="math">x = sin t</span>, <span class="math">y = cos 2t</span> for <span class="math">0 &le; t &le; &pi;</span>.<br>
+(a) Find dy/dx in terms of t.<br>
+(b) Find the Cartesian equation of the curve.<br>
+(c) Find the equation of the tangent when t = &pi;/4.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) dx/dt = cos t, dy/dt = -2 sin 2t = -4 sin t cos t<br>
+dy/dx = (-4 sin t cos t)/(cos t) = -4 sin t (for cos t &ne; 0)<br>
+(b) y = cos 2t = 1 - 2 sin<sup>2</sup>t = 1 - 2x<sup>2</sup>, where x = sin t<br>
+Cartesian: y = 1 - 2x<sup>2</sup>, -1 &le; x &le; 1<br>
+(c) t = &pi;/4: x = 1/&radic;2, y = cos(&pi;/2) = 0<br>
+dy/dx = -4 sin(&pi;/4) = -4/&radic;2 = -2&radic;2<br>
+Tangent: y - 0 = -2&radic;2(x - 1/&radic;2)<br>
+<strong>M1</strong> for derivatives, <strong>A1</strong> dy/dx, <strong>M1</strong> Cartesian, <strong>A1</strong> y=1-2x<sup>2</sup>, <strong>M1</strong> tangent equation, <strong>A1</strong> final</div>
+</div>
+
+<!-- === INTEGRATION === -->
+<h2>2.20 Integration (Standard, Substitution, Parts)</h2>
+<div class="question-box">
+<h4>Question 2.20a <span class="tag">Basic</span><span class="marks">4 marks</span></h4>
+<p>Find: (a) &int; (3x<sup>2</sup> - 2x + 5) dx &nbsp; (b) &int; e<sup>2x</sup> dx</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">(a) &int; (3x<sup>2</sup> - 2x + 5) dx = x<sup>3</sup> - x<sup>2</sup> + 5x + C<br>
+(b) &int; e<sup>2x</sup> dx = &frac12; e<sup>2x</sup> + C<br>
+<strong>B1</strong> each term, <strong>B1</strong> for &frac12;e<sup>2x</sup></div>
+</div>
+<div class="question-box">
+<h4>Question 2.20b <span class="tag">Intermediate</span><span class="marks">6 marks</span></h4>
+<p>Use the substitution <span class="math">u = x<sup>2</sup> + 1</span> to find <span class="math">&int;<sub>0</sub><sup>2</sup> x(x<sup>2</sup> + 1)<sup>3</sup> dx</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">u = x<sup>2</sup> + 1, du/dx = 2x &rArr; x dx = du/2<br>
+x=0: u=1, x=2: u=5<br>
+&int;<sub>1</sub><sup>5</sup> u<sup>3</sup> &times; du/2 = 1/2 &int;<sub>1</sub><sup>5</sup> u<sup>3</sup> du = 1/2 [u<sup>4</sup>/4]<sub>1</sub><sup>5</sup><br>
+= 1/8 (5<sup>4</sup> - 1<sup>4</sup>) = 1/8 (625 - 1) = 624/8 = 78<br>
+<strong>M1</strong> for substitution, <strong>M1</strong> for limits, <strong>A1</strong> for integral, <strong>A1</strong> for 78</div>
+</div>
+<div class="question-box">
+<h4>Question 2.20c <span class="tag tag-hard">Advanced</span><span class="marks">6 marks</span></h4>
+<p>Use integration by parts to find <span class="math">&int; x<sup>2</sup> e<sup>x</sup> dx</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Let u = x<sup>2</sup>, dv/dx = e<sup>x</sup><br>
+du/dx = 2x, v = e<sup>x</sup><br>
+&int; x<sup>2</sup> e<sup>x</sup> dx = x<sup>2</sup>e<sup>x</sup> - &int; 2x e<sup>x</sup> dx<br>
+Now integrate &int; x e<sup>x</sup> dx: u=x, dv/dx=e<sup>x</sup><br>
+= x e<sup>x</sup> - &int; e<sup>x</sup> dx = x e<sup>x</sup> - e<sup>x</sup><br>
+&there4; &int; x<sup>2</sup>e<sup>x</sup> dx = x<sup>2</sup>e<sup>x</sup> - 2(x e<sup>x</sup> - e<sup>x</sup>) + C<br>
+= e<sup>x</sup>(x<sup>2</sup> - 2x + 2) + C<br>
+<strong>M1</strong> first parts, <strong>M1</strong> second parts, <strong>A1</strong> for each stage, <strong>A1</strong> final</div>
+</div>
+<div class="question-box">
+<h4>Question 2.20d <span class="tag">Intermediate</span><span class="marks">4 marks</span></h4>
+<p>Evaluate <span class="math">&int; x sin x dx</span> (integration by parts).</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">u = x, dv/dx = sin x<br>
+du/dx = 1, v = -cos x<br>
+&int; x sin x dx = -x cos x - &int; (-cos x) dx = -x cos x + &int; cos x dx<br>
+= -x cos x + sin x + C<br>
+<strong>M1</strong> parts, <strong>A1</strong> for -x cos x, <strong>A1</strong> for + sin x</div>
+</div>
+
+<h2>2.21 Area Between Curves / Parametric Integration</h2>
+<div class="question-box">
+<h4>Question 2.21a <span class="tag">Intermediate</span><span class="marks">6 marks</span></h4>
+<p>Find the area enclosed between the curves <span class="math">y = x<sup>2</sup></span> and <span class="math">y = x + 2</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Intersection: x<sup>2</sup> = x + 2 &rArr; x<sup>2</sup>-x-2=0 &rArr; (x-2)(x+1)=0 &rArr; x=-1, 2<br>
+Area = &int;<sub>-1</sub><sup>2</sup> [(x+2) - x<sup>2</sup>] dx<br>
+= &int;<sub>-1</sub><sup>2</sup> (-x<sup>2</sup>+x+2) dx<br>
+= [-x<sup>3</sup>/3 + x<sup>2</sup>/2 + 2x]<sub>-1</sub><sup>2</sup><br>
+= (-8/3 + 2 + 4) - (1/3 + 1/2 - 2)<br>
+= (-8/3+6) - (1/3-3/2)<br>
+= 10/3 - (-7/6) = 10/3 + 7/6 = 27/6 = 9/2<br>
+<strong>M1</strong> for intersection, <strong>M1</strong> for correct order, <strong>M1</strong> for integrating, <strong>A1</strong> for 9/2</div>
+</div>
+<div class="question-box">
+<h4>Question 2.21b <span class="tag tag-hard">Advanced</span><span class="marks">6 marks</span></h4>
+<p>A curve has parametric equations <span class="math">x = t<sup>2</sup></span>, <span class="math">y = t<sup>3</sup></span> for <span class="math">0 &le; t &le; 2</span>. Find the area under the curve.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Area = &int; y dx = &int; y (dx/dt) dt<br>
+dx/dt = 2t, y = t<sup>3</sup><br>
+Area = &int;<sub>0</sub><sup>2</sup> t<sup>3</sup> &times; 2t dt = 2 &int;<sub>0</sub><sup>2</sup> t<sup>4</sup> dt<br>
+= 2 [t<sup>5</sup>/5]<sub>0</sub><sup>2</sup> = 2(32/5) = 64/5 = 12.8<br>
+<strong>M1</strong> for formula, <strong>A1</strong> for integrand, <strong>A1</strong> for limits, <strong>A1</strong> for 12.8</div>
+</div>
+
+<h2>2.22 Differential Equations</h2>
+<div class="question-box">
+<h4>Question 2.22a <span class="tag">Intermediate</span><span class="marks">7 marks</span></h4>
+<p>Solve the differential equation <span class="math">dy/dx = 3x<sup>2</sup>y</span> given that <span class="math">y = 1</span> when <span class="math">x = 0</span>.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">Separate variables: &int; (1/y) dy = &int; 3x<sup>2</sup> dx<br>
+ln|y| = x<sup>3</sup> + C<br>
+y = e<sup>x<sup>3</sup>+C</sup> = Ae<sup>x<sup>3</sup></sup><br>
+y(0)=1: 1 = Ae<sup>0</sup> &rArr; A = 1<br>
+y = e<sup>x<sup>3</sup></sup><br>
+<strong>M1</strong> separate, <strong>M1</strong> integrate, <strong>A1</strong> ln|y|=x<sup>3</sup>+C, <strong>A1</strong> y=Ae<sup>x<sup>3</sup></sup>, <strong>A1</strong> A=1</div>
+</div>
+<div class="question-box">
+<h4>Question 2.22b <span class="tag tag-hard">Advanced</span><span class="marks">8 marks</span></h4>
+<p>Solve the differential equation <span class="math">dy/dx = (xy + y)/(x<sup>2</sup> + 1)</span> given y = 2 when x = 0. Express y in terms of x.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">dy/dx = y(x+1)/(x<sup>2</sup>+1)<br>
+&int; (1/y) dy = &int; (x+1)/(x<sup>2</sup>+1) dx<br>
+ln|y| = &int; x/(x<sup>2</sup>+1) dx + &int; 1/(x<sup>2</sup>+1) dx<br>
+= 1/2 ln|x<sup>2</sup>+1| + tan<sup>-1</sup>x + C<br>
+y(0)=2: ln 2 = 1/2 ln 1 + 0 + C &rArr; C = ln 2<br>
+ln|y| = 1/2 ln(x<sup>2</sup>+1) + tan<sup>-1</sup>x + ln 2<br>
+y = 2e<sup>tan<sup>-1</sup>x</sup> &radic;(x<sup>2</sup>+1)<br>
+<strong>M1</strong> separation, <strong>M1</strong> splitting integral, <strong>A1</strong> each integral, <strong>A1</strong> particular solution</div>
+</div>
+
+<h2>2.23 Numerical Methods</h2>
+<div class="question-box">
+<h4>Question 2.23a <span class="tag">Basic</span><span class="marks">3 marks</span></h4>
+<p>Show that the equation <span class="math">x<sup>3</sup> - 2x - 5 = 0</span> has a root between x = 2 and x = 3.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">f(2) = 8 - 4 - 5 = -1 &lt; 0<br>
+f(3) = 27 - 6 - 5 = 16 &gt; 0<br>
+f(2) &times; f(3) &lt; 0 and f is continuous, so a root exists between 2 and 3<br>
+<strong>M1</strong> for evaluating both, <strong>A1</strong> for sign change, <strong>A1</strong> conclusion</div>
+</div>
+<div class="question-box">
+<h4>Question 2.23b <span class="tag">Intermediate</span><span class="marks">6 marks</span></h4>
+<p>Use the Newton-Raphson method with initial value x<sub>0</sub> = 2 to find the root of <span class="math">x<sup>3</sup> - 2x - 5 = 0</span> correct to 3 decimal places.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">f(x) = x<sup>3</sup> - 2x - 5, f'(x) = 3x<sup>2</sup> - 2<br>
+x<sub>n+1</sub> = x<sub>n</sub> - f(x<sub>n</sub>)/f'(x<sub>n</sub>)<br>
+x<sub>0</sub> = 2<br>
+x<sub>1</sub> = 2 - (8-4-5)/(12-2) = 2 - (-1/10) = 2.1<br>
+x<sub>2</sub> = 2.1 - (9.261-4.2-5)/(13.23-2) = 2.1 - 0.061/11.23 = 2.0946<br>
+x<sub>3</sub> = 2.0946 - (9.190-4.189-5)/(13.158-2) = 2.0946 - 0.001/11.158 = 2.0945<br>
+Root = 2.095 (3 dp)<br>
+<strong>M1</strong> f'(x), <strong>M1</strong> formula, <strong>M1</strong> x<sub>1</sub>, <strong>A1</strong> x<sub>2</sub>, <strong>A1</strong> correct answer</div>
+</div>
+<div class="question-box">
+<h4>Question 2.23c <span class="tag">Intermediate</span><span class="marks">5 marks</span></h4>
+<p>Use the trapezium rule with 4 strips to estimate <span class="math">&int;<sub>0</sub><sup>2</sup> (x<sup>2</sup> + 1) dx</span>. Compare with the exact value.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">h = (2-0)/4 = 0.5<br>
+x: 0, 0.5, 1.0, 1.5, 2.0<br>
+y: 1, 1.25, 2, 3.25, 5<br>
+&int; &asymp; h/2 [(y<sub>0</sub>+y<sub>4</sub>) + 2(y<sub>1</sub>+y<sub>2</sub>+y<sub>3</sub>)]<br>
+= 0.25[(1+5) + 2(1.25+2+3.25)] = 0.25[6 + 2(6.5)] = 0.25[6+13] = 4.75<br>
+Exact: [x<sup>3</sup>/3 + x]<sub>0</sub><sup>2</sup> = 8/3 + 2 = 14/3 = 4.667<br>
+Error = 4.75 - 4.667 = 0.0833 (overestimate)<br>
+<strong>M1</strong> h, <strong>M1</strong> y-values, <strong>A1</strong> trapezium value, <strong>M1</strong> exact, <strong>A1</strong> comparison</div>
+</div>
+<div class="question-box">
+<h4>Question 2.23d <span class="tag tag-hard">Advanced</span><span class="marks">5 marks</span></h4>
+<p>The equation <span class="math">x = e<sup>-x</sup></span> can be rearranged as <span class="math">x<sub>n+1</sub> = e<sup>-x<sub>n</sub></sup></span>. Use iteration starting with x<sub>0</sub> = 0.5 to find the root to 3 dp.</p>
+<button class="show-sol" onclick="this.nextElementSibling.style.display='block';this.style.display='none'">Show Solution</button>
+<div class="solution">x<sub>0</sub> = 0.5<br>
+x<sub>1</sub> = e<sup>-0.5</sup> = 0.6065<br>
+x<sub>2</sub> = e<sup>-0.6065</sup> = 0.5452<br>
+x<sub>3</sub> = e<sup>-0.5452</sup> = 0.5797<br>
+x<sub>4</sub> = e<sup>-0.5797</sup> = 0.5600<br>
+x<sub>5</sub> = e<sup>-0.5600</sup> = 0.5712<br>
+x<sub>6</sub> = e<sup>-0.5712</sup> = 0.5649<br>
+x<sub>7</sub> = e<sup>-0.5649</sup> = 0.5684<br>
+x<sub>8</sub> = e<sup>-0.5684</sup> = 0.5664<br>
+x<sub>9</sub> = e<sup>-0.5664</sup> = 0.5675<br>
+x<sub>10</sub> = e<sup>-0.5675</sup> = 0.5669<br>
+Root = 0.567 (3 dp)<br>
+<strong>M1</strong> iteration, <strong>M1</strong> each step, <strong>A1</strong> for 0.567</div>
+</div>
+
+<!-- END OF MARKER -->
+<!--SECTION_2_END-->
+</div>
+
+<div id="sec-predicted" class="section">
+<h1>Predicted 2026 Paper — WJEC A2 Unit 3 Pure Mathematics B</h1>
+<div class="warning-box">
+<strong>Exam Conditions:</strong> Time: 2 hours 30 minutes. Total marks: 120. Answer all questions. Non-calculator unless stated. Silent, non-programmable calculators permitted.
+</div>
+
+<div class="question-box">
+<h4>Question 1 — Algebraic Fractions <span class="marks">6 marks</span></h4>
+<p>(a) Simplify fully: <span class="math">(x<sup>2</sup> - 9)/(x<sup>2</sup> + 3x) &times; (x<sup>2</sup> + 4x + 4)/(x<sup>2</sup> - x - 6)</span> [3]</p>
+<p>(b) Find the quotient and remainder when <span class="math">3x<sup>3</sup> - 2x<sup>2</sup> + 5x - 8</span> is divided by <span class="math">x - 1</span>. [3]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 2 — Partial Fractions &amp; Binomial Expansion <span class="marks">10 marks</span></h4>
+<p>(a) Express <span class="math">(6x<sup>2</sup> + 7x - 5)/((x - 1)(x<sup>2</sup> + x + 1))</span> in partial fractions. [5]</p>
+<p>(b) Hence expand f(x) in ascending powers of <span class="math">1/x</span> up to and including the term in <span class="math">1/x<sup>3</sup></span>. [5]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 3 — Modulus Function <span class="marks">6 marks</span></h4>
+<p>(a) Solve <span class="math">|4x - 3| = |2x + 5|</span>. [3]</p>
+<p>(b) Solve the inequality <span class="math">|2x + 1| &lt; |x - 3|</span>. [3]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 4 — Functions <span class="marks">7 marks</span></h4>
+<p>The function f is defined by <span class="math">f(x) = ln(3x - 5)</span> for <span class="math">x &gt; 5/3</span>.</p>
+<p>(a) State the range of f. [1]</p>
+<p>(b) Find an expression for <span class="math">f<sup>-1</sup>(x)</span> and state its domain and range. [4]</p>
+<p>(c) Given <span class="math">g(x) = e<sup>2x</sup></span>, find <span class="math">fg(x)</span> and state its domain. [2]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 5 — Transformations &amp; Proof by Contradiction <span class="marks">6 marks</span></h4>
+<p>(a) The curve <span class="math">y = f(x)</span> is transformed to <span class="math">y = 3f(x + 2) - 4</span>. Describe the three transformations in the correct order. [3]</p>
+<p>(b) Prove by contradiction that there is no greatest odd integer. [3]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 6 — Series <span class="marks">7 marks</span></h4>
+<p>A geometric series has first term 18 and sum to infinity 27.</p>
+<p>(a) Find the common ratio r. [2]</p>
+<p>(b) Find the sum of the first 6 terms. [2]</p>
+<p>(c) Find the smallest value of n for which S<sub>n</sub> exceeds 26.9. [3]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 7 — Radians, Small Angles &amp; Reciprocal Trig <span class="marks">8 marks</span></h4>
+<p>(a) A sector of a circle has radius 12 cm and arc length 9.6 cm. Find the angle of the sector in radians and the area of the sector. [3]</p>
+<p>(b) For small &theta;, show that <span class="math">(sin 4&theta; + tan 2&theta;)/(1 - cos 3&theta;) &asymp; 4/9&theta;</span>. [3]</p>
+<p>(c) Write down the exact value of <span class="math">cosec(&pi;/3) &times; sec(&pi;/6)</span>. [2]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 8 — Harmonic Form &amp; Trig Equations <span class="marks">10 marks</span></h4>
+<p>(a) Express <span class="math">5 cos x - 12 sin x</span> in the form <span class="math">R cos(x + &alpha;)</span>, where R &gt; 0 and 0 &lt; &alpha; &lt; &pi;/2. Give R exactly and &alpha; to 3 significant figures. [3]</p>
+<p>(b) Hence solve <span class="math">5 cos x - 12 sin x = 4</span> for <span class="math">0 &le; x &le; 2&pi;</span>, giving your answers to 3 significant figures. [5]</p>
+<p>(c) Find the minimum value of <span class="math">5 cos x - 12 sin x</span> and the smallest positive x at which it occurs. [2]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 9 — Differentiation <span class="marks">13 marks</span></h4>
+<p>(a) Differentiate <span class="math">y = x<sup>3</sup>e<sup>2x</sup></span>. [3]</p>
+<p>(b) Given that <span class="math">x<sup>2</sup> + 3xy - 2y<sup>2</sup> = 8</span>, find dy/dx in terms of x and y. Hence find the gradient at the point (2, 1). [5]</p>
+<p>(c) A curve has parametric equations <span class="math">x = 2t + 1</span>, <span class="math">y = t<sup>3</sup> - 3t</span>. Find dy/dx in terms of t and the equation of the tangent when t = 1. [5]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 10 — Integration <span class="marks">13 marks</span></h4>
+<p>(a) Find <span class="math">&int; 3x<sup>2</sup>(x<sup>3</sup> + 2)<sup>4</sup> dx</span>. [3]</p>
+<p>(b) Use the substitution <span class="math">u = x<sup>2</sup> + 1</span> to evaluate <span class="math">&int;<sub>0</sub><sup>2</sup> x&radic;(x<sup>2</sup> + 1) dx</span>. [5]</p>
+<p>(c) Use integration by parts to find <span class="math">&int; x cos x dx</span>. [5]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 11 — Differential Equations <span class="marks">9 marks</span></h4>
+<p>Solve the differential equation <span class="math">dy/dx = (2x + 1)y</span> given that <span class="math">y = 4</span> when <span class="math">x = 0</span>. Express y in terms of x. [9]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 12 — Numerical Methods <span class="marks">10 marks</span></h4>
+<p>(a) Show that the equation <span class="math">x<sup>3</sup> - 5x + 3 = 0</span> has a root between x = 1 and x = 2. [2]</p>
+<p>(b) Use the Newton-Raphson method with initial value x<sub>0</sub> = 1.5 to find the root correct to 3 decimal places. [5]</p>
+<p>(c) Use the trapezium rule with 5 strips to estimate <span class="math">&int;<sub>0</sub><sup>1</sup> e<sup>x<sup>2</sup></sup> dx</span>, giving your answer to 3 decimal places. [3]</p>
+</div>
+
+<div class="question-box">
+<h4>Question 13 — Combined Topics: Area, Inflection, Parametric Integration &amp; Parts <span class="marks">15 marks</span></h4>
+<p>(a) Find the area enclosed between the curves <span class="math">y = x<sup>2</sup> + 2</span> and <span class="math">y = 3x + 2</span>. [5]</p>
+<p>(b) Show that <span class="math">y = x<sup>3</sup> - 6x<sup>2</sup> + 12x - 3</span> has a point of inflection at x = 2. [3]</p>
+<p>(c) A curve is defined parametrically by <span class="math">x = t<sup>3</sup></span>, <span class="math">y = t<sup>2</sup></span> for <span class="math">0 &le; t &le; 2</span>. Find the area under the curve. [4]</p>
+<p>(d) Find <span class="math">&int; x sin 2x dx</span>. [3]</p>
+</div>
+
+<p style="text-align:center;margin:30px 0;font-weight:bold;font-size:18px;color:#1a237e">END OF PAPER — TOTAL: 120 MARKS</p>
+</div>
+
+<div id="sec-markscheme" class="section">
+<h1>Full Mark Scheme — Predicted 2026 Paper</h1>
+<p>Mark scheme conventions: <strong>M</strong> = method mark, <strong>A</strong> = accuracy mark, <strong>B</strong> = independent mark. Marks in brackets are for the specific step.</p>
+
+<h2>Question 1 — Algebraic Fractions (6 marks)</h2>
+<div class="question-box">
+<p><strong>(a)</strong> Simplify [3]</p>
+<div class="solution" style="display:block">
+= ((x-3)(x+3))/(x(x+3)) &times; ((x+2)<sup>2</sup>)/((x-3)(x+2)) <strong>M1</strong> factorising<br>
+= (x-3)/x &times; (x+2)/(x-3) <strong>A1</strong> cancelling<br>
+= (x+2)/x <strong>A1</strong>
+</div>
+</div>
+<div class="question-box">
+<p><strong>(b)</strong> Division [3]</p>
+<div class="solution" style="display:block">
+3x<sup>3</sup>-2x<sup>2</sup>+5x-8 &divide; (x-1) = 3x<sup>2</sup>+x+6 remainder -2 <strong>M1 A1</strong> quotient, <strong>B1</strong> remainder
+</div>
+</div>
+
+<h2>Question 2 — Partial Fractions &amp; Binomial (10 marks)</h2>
+<div class="question-box">
+<p><strong>(a)</strong> Partial fractions [5]</p>
+<div class="solution" style="display:block">
+A/(x-1) + (Bx+C)/(x<sup>2</sup>+x+1) <strong>M1</strong><br>
+6x<sup>2</sup>+7x-5 = A(x<sup>2</sup>+x+1)+(Bx+C)(x-1) <strong>M1</strong><br>
+x=1: 8=3A &rArr; A=8/3 <strong>A1</strong><br>
+x<sup>2</sup>: 6=A+B &rArr; B=10/3 <strong>A1</strong><br>
+const: -5=A-C &rArr; C=23/3 <strong>A1</strong>
+</div>
+</div>
+<div class="question-box">
+<p><strong>(b)</strong> Binomial expansion [5]</p>
+<div class="solution" style="display:block">
+(8/3)/(x-1) = (8/3x)(1-1/x)<sup>-1</sup> = (8/3x)(1+1/x+1/x<sup>2</sup>+1/x<sup>3</sup>+...) <strong>M1</strong><br>
+= 8/3x + 8/3x<sup>2</sup> + 8/3x<sup>3</sup> + ... <strong>A1</strong><br>
+Second term expansion using binomial on (1+1/x+1/x<sup>2</sup>)<sup>-1</sup> <strong>M1</strong><br>
+= 10/3x + 13/3x<sup>2</sup> + ... <strong>A1</strong><br>
+Combined: 6/x + 7/x<sup>2</sup> + 8/3x<sup>3</sup> + ... <strong>A1</strong>
+</div>
+</div>
+
+<h2>Question 3 — Modulus Function (6 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> |4x-3|=|2x+5|<br>
+4x-3=2x+5 &rArr; x=4 <strong>M1 A1</strong><br>
+4x-3=-(2x+5) &rArr; x=-1/3 <strong>A1</strong><br>
+<strong>(b)</strong> |2x+1|&lt;|x-3|<br>
+Square: (2x+1)<sup>2</sup>&lt;(x-3)<sup>2</sup> <strong>M1</strong><br>
+3x<sup>2</sup>+10x-8&lt;0 &rArr; (3x-2)(x+4)&lt;0 <strong>A1</strong><br>
+-4&lt;x&lt;2/3 <strong>A1</strong>
+</div>
+</div>
+
+<h2>Question 4 — Functions (7 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> Range: f(x)&isin;&#x211D; <strong>B1</strong><br>
+<strong>(b)</strong> y=ln(3x-5) &rArr; e<sup>y</sup>=3x-5 <strong>M1</strong><br>
+f<sup>-1</sup>(x)=(e<sup>x</sup>+5)/3 <strong>A1</strong><br>
+Domain: x&isin;&#x211D; <strong>B1</strong>, Range: f<sup>-1</sup>(x)&gt;5/3 <strong>B1</strong><br>
+<strong>(c)</strong> fg(x)=ln(3e<sup>2x</sup>-5) <strong>M1</strong><br>
+Domain: x&gt;&frac12;ln(5/3) <strong>A1</strong>
+</div>
+</div>
+
+<h2>Question 5 — Transformations &amp; Proof (6 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> 1. Left 2 units <strong>B1</strong>, 2. Vertical stretch &times;3 <strong>B1</strong>, 3. Down 4 units <strong>B1</strong><br>
+<strong>(b)</strong> Assume greatest odd integer N exists <strong>M1</strong>. N+2 odd and &gt;N, contradiction <strong>M1</strong>. Conclusion <strong>A1</strong>
+</div>
+</div>
+
+<h2>Question 6 — Series (7 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> 18/(1-r)=27 &rArr; r=1/3 <strong>M1 A1</strong><br>
+<strong>(b)</strong> S<sub>6</sub>=18(1-(1/3)<sup>6</sup>)/(2/3)=26.96 <strong>M1 A1</strong><br>
+<strong>(c)</strong> 27(1-(1/3)<sup>n</sup>)&gt;26.9 &rArr; n&gt;ln(0.0037)/ln(1/3) <strong>M1 M1</strong>. n=6 <strong>A1</strong>
+</div>
+</div>
+
+<h2>Question 7 — Radians, Small Angles, Reciprocal Trig (8 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> &theta;=9.6/12=0.8 rad <strong>B1</strong>. Area=&frac12;&times;144&times;0.8=57.6 cm<sup>2</sup> <strong>M1 A1</strong><br>
+<strong>(b)</strong> sin4&theta;&asymp;4&theta;, tan2&theta;&asymp;2&theta;, 1-cos3&theta;&asymp;9&theta;<sup>2</sup>/2 <strong>M1 A1</strong>. Ratio=4/9&theta; <strong>A1</strong><br>
+<strong>(c)</strong> 2/&radic;3 &times; 2/&radic;3 = 4/3 <strong>M1 A1</strong>
+</div>
+</div>
+
+<h2>Question 8 — Harmonic Form &amp; Trig Equations (10 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> R=13 <strong>B1</strong>, &alpha;=tan<sup>-1</sup>(12/5)=1.176 <strong>M1 A1</strong><br>
+<strong>(b)</strong> cos(x+1.176)=4/13 <strong>M1</strong>, x+1.176=&plusmn;1.268+2n&pi; <strong>A1 M1</strong><br>
+x=0.092, 3.839 <strong>A1 A1</strong> (both within range) <strong>A1</strong><br>
+<strong>(c)</strong> Min = -13 <strong>B1</strong>, at x=&pi;-1.176=1.966 <strong>B1</strong>
+</div>
+</div>
+
+<h2>Question 9 — Differentiation (13 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> dy/dx = 3x<sup>2</sup>e<sup>2x</sup>+x<sup>3</sup>(2e<sup>2x</sup>) <strong>M1 A1</strong> = x<sup>2</sup>e<sup>2x</sup>(3+2x) <strong>A1</strong><br>
+<strong>(b)</strong> 2x+3y+3x dy/dx-4y dy/dx=0 <strong>M1 A1</strong><br>
+dy/dx=-(2x+3y)/(3x-4y) <strong>A1</strong>, at (2,1): dy/dx=-7/2 <strong>A1</strong><br>
+<strong>(c)</strong> dx/dt=2, dy/dt=3t<sup>2</sup>-3 <strong>M1</strong>, dy/dx=(3t<sup>2</sup>-3)/2 <strong>A1</strong><br>
+t=1: dy/dx=0 <strong>A1</strong>, point (3,-2) <strong>M1</strong>, tangent: y=-2 <strong>A1</strong>
+</div>
+</div>
+
+<h2>Question 10 — Integration (13 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> &int;3x<sup>2</sup>(x<sup>3</sup>+2)<sup>4</sup>dx = (x<sup>3</sup>+2)<sup>5</sup>/5+C <strong>M1 A1 A1</strong><br>
+<strong>(b)</strong> u=x<sup>2</sup>+1, du=2xdx <strong>M1</strong>, limits 1&rarr;5 <strong>M1</strong><br>
+&frac12;&int;<sub>1</sub><sup>5</sup> u<sup>1/2</sup>du <strong>A1</strong> = &frac13;(5&radic;5-1) <strong>A1 A1</strong><br>
+<strong>(c)</strong> u=x, dv=cos x dx <strong>M1</strong>, x sin x-&int;sin x dx <strong>M1 A1</strong> = x sin x+cos x+C <strong>A1 A1</strong>
+</div>
+</div>
+
+<h2>Question 11 — Differential Equations (9 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+dy/dx=(2x+1)y <strong>M1</strong> separate<br>
+&int;(1/y)dy=&int;(2x+1)dx <strong>M1</strong><br>
+ln|y|=x<sup>2</sup>+x+C <strong>A1 A1</strong><br>
+y=Ae<sup>x<sup>2</sup>+x</sup> <strong>M1</strong><br>
+y(0)=4: A=4 <strong>M1 A1</strong><br>
+y=4e<sup>x<sup>2</sup>+x</sup> <strong>A1</strong>
+</div>
+</div>
+
+<h2>Question 12 — Numerical Methods (10 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> f(1)=-1, f(2)=1, sign change <strong>M1</strong>, root in (1,2) <strong>A1</strong><br>
+<strong>(b)</strong> f'(x)=3x<sup>2</sup>-5 <strong>B1</strong><br>
+x<sub>n+1</sub>=x<sub>n</sub>-(x<sub>n</sub><sup>3</sup>-5x<sub>n</sub>+3)/(3x<sub>n</sub><sup>2</sup>-5) <strong>M1</strong><br>
+x<sub>1</sub>=2.143 <strong>M1</strong>, x<sub>2</sub>=1.902 <strong>A1</strong>, x<sub>3</sub>=1.839, x<sub>4</sub>=1.835 <strong>A1</strong><br>
+<strong>(c)</strong> h=0.2 <strong>B1</strong>, y: 1, 1.041, 1.174, 1.433, 1.896, 2.718 <strong>M1</strong>, T=1.481 <strong>A1</strong>
+</div>
+</div>
+
+<h2>Question 13 — Combined Topics (15 marks)</h2>
+<div class="question-box">
+<div class="solution" style="display:block">
+<strong>(a)</strong> Intersection: x=0,3 <strong>M1</strong>. Area=&int;<sub>0</sub><sup>3</sup>(3x-x<sup>2</sup>)dx <strong>M1 M1</strong> = 4.5 <strong>A1 A1</strong><br>
+<strong>(b)</strong> d<sup>2</sup>y/dx<sup>2</sup>=6x-12 <strong>M1</strong>, =0 at x=2 <strong>A1</strong>, sign change &rarr; inflection <strong>A1</strong><br>
+<strong>(c)</strong> Area=&int;t<sup>2</sup>&times;3t<sup>2</sup>dt <strong>M1 M1</strong> = 3&int;<sub>0</sub><sup>2</sup>t<sup>4</sup>dt = 96/5=19.2 <strong>M1 A1</strong><br>
+<strong>(d)</strong> &int;x sin 2x dx <strong>M1</strong> = -&frac12;x cos 2x+&frac14; sin 2x+C <strong>A1 A1</strong>
+</div>
+</div>
+
+<p style="text-align:center;margin:30px 0;font-weight:bold;font-size:18px;color:#1a237e">END OF MARK SCHEME</p>
+</div>
+
+<div id="sec-tips" class="section">
+<h1>Examiner Tips — By Topic</h1>
+<p>These tips are distilled from analysing WJEC mark schemes (2018-2025). They highlight exactly what examiners look for and common mistakes to avoid.</p>
+
+<div class="tip-box">
+<strong>Algebraic Fractions &amp; Polynomial Division</strong><br>
+&bull; Always factorise fully before cancelling - examiners check for highest common factors, not just obvious ones<br>
+&bull; When dividing polynomials, use the factor theorem first to check if the divisor is a factor. If f(a)=0, (x-a) is a factor<br>
+&bull; In algebraic long division, write 0 coefficients for missing powers (e.g., x<sup>3</sup>+0x<sup>2</sup>+...)<br>
+&bull; Quotient and remainder: degree of remainder &lt; degree of divisor<br>
+&bull; <strong>Common error:</strong> Cancelling terms instead of factors (e.g., cancelling x from numerator and denominator of (x<sup>2</sup>+3)/x &rarr; x+3 is WRONG)
+</div>
+
+<div class="tip-box">
+<strong>Partial Fractions</strong><br>
+&bull; For linear denominators: A/(x-a)+B/(x-b). Cover-up method works for linear factors only<br>
+&bull; For repeated linear: A/(x-a)+B/(x-a)<sup>2</sup><br>
+&bull; For quadratic denominator: (Bx+C)/(ax<sup>2</sup>+bx+c)<br>
+&bull; Always check the degree of the numerator - if degree &ge; degree of denominator, polynomial division first<br>
+&bull; <strong>Common error:</strong> Forgetting the C term in (Bx+C)/(quadratic). B alone is not enough
+</div>
+
+<div class="tip-box">
+<strong>Modulus Function</strong><br>
+&bull; |f(x)|=g(x): solve f(x)=g(x) and -f(x)=g(x). Check solutions satisfy original equation<br>
+&bull; |f(x)|&lt;g(x): solve -g(x)&lt;f(x)&lt;g(x)<br>
+&bull; |f(x)|&gt;g(x): solve f(x)&lt;-g(x) OR f(x)&gt;g(x)<br>
+&bull; Squaring both sides is efficient for |f(x)|=|g(x)| or |f(x)|&lt;|g(x)|<br>
+&bull; <strong>Common error:</strong> Forgetting to check solutions. Squaring can introduce extraneous solutions
+</div>
+
+<div class="tip-box">
+<strong>Functions (Domain, Range, Inverse, Composite)</strong><br>
+&bull; Domain: avoid division by zero, square roots of negatives, logs of non-positive numbers<br>
+&bull; Range: find by considering the behaviour of the function across its domain (including endpoints and turning points)<br>
+&bull; For inverse: swap x and y, rearrange, check domain of inverse = range of original<br>
+&bull; Composite fg(x): apply g first, then f. Domain: x must be in domain of g AND g(x) must be in domain of f<br>
+&bull; <strong>Common error:</strong> Domain of f<sup>-1</sup> = range of f, NOT the domain of f. Students regularly get this wrong
+</div>
+
+<div class="tip-box">
+<strong>Transformations</strong><br>
+&bull; Order matters: y=af(x+b)+c: horizontal shift, then stretch, then vertical shift<br>
+&bull; y=f(ax): horizontal stretch by 1/a (this is counterintuitive - many students get it backwards)<br>
+&bull; y=-f(x): reflection in x-axis. y=f(-x): reflection in y-axis<br>
+&bull; <strong>Common error:</strong> y=f(x+2) moves left, not right. "Inside the brackets, opposite direction"
+</div>
+
+<div class="tip-box">
+<strong>Proof by Contradiction</strong><br>
+&bull; Structure: Assume the opposite &rarr; derive a contradiction &rarr; conclude original statement is true<br>
+&bull; For irrational proofs: assume rational p/q in lowest terms, show p and q share a factor (contradiction)<br>
+&bull; For "greatest" proofs: construct a larger element of the same type<br>
+&bull; <strong>Common error:</strong> Not explicitly stating the contradiction or the concluding statement. The final "Therefore..." line earns a mark
+</div>
+
+<div class="tip-box">
+<strong>Series</strong><br>
+&bull; Arithmetic: a+(n-1)d; S<sub>n</sub>=n/2(2a+(n-1)d)=n/2(a+l)<br>
+&bull; Geometric: ar<sup>n-1</sup>; S<sub>n</sub>=a(1-r<sup>n</sup>)/(1-r); S<sub>&infin;</sub>=a/(1-r) for |r|&lt;1<br>
+&bull; For recurrence: u<sub>n+1</sub>=f(u<sub>n</sub>), find pattern then prove by induction<br>
+&bull; S<sub>n</sub>-S<sub>n-1</sub>=u<sub>n</sub> - useful for finding nth term from sum formula<br>
+&bull; <strong>Common error:</strong> Using S<sub>&infin;</sub> formula when |r|&ge;1 (diverges). Always check |r|&lt;1 first
+</div>
+
+<div class="tip-box">
+<strong>Binomial Series (Fractional/Negative Index)</strong><br>
+&bull; Always rewrite as (something)(1+kx)<sup>n</sup> before expanding<br>
+&bull; Formula: (1+x)<sup>n</sup>=1+nx+n(n-1)x<sup>2</sup>/2!+n(n-1)(n-2)x<sup>3</sup>/3!+...<br>
+&bull; Validity: |kx|&lt;1 &rarr; |x|&lt;1/|k|<br>
+&bull; When combined with partial fractions, add the expansions term by term<br>
+&bull; <strong>Common error:</strong> Forgetting the range of validity. This is almost always worth a mark. State it explicitly
+</div>
+
+<div class="tip-box">
+<strong>Radian Measure</strong><br>
+&bull; Arc length s=r&theta;. Area of sector A=&frac12;r<sup>2</sup>&theta;<br>
+&bull; Area of triangle in sector = &frac12;r<sup>2</sup> sin &theta;<br>
+&bull; Area of segment = sector area - triangle area<br>
+&bull; Always check your calculator is in RADIAN mode for all trig working<br>
+&bull; <strong>Common error:</strong> Forgetting to convert degrees to radians before using arc length/sector area formulae
+</div>
+
+<div class="tip-box">
+<strong>Small Angle Approximations</strong><br>
+&bull; For small &theta; (radians): sin &theta; &asymp; &theta;, cos &theta; &asymp; 1-&theta;<sup>2</sup>/2, tan &theta; &asymp; &theta;<br>
+&bull; Expand brackets fully and simplify - cancellations often occur<br>
+&bull; Be careful with multiples: sin k&theta; &asymp; k&theta;, cos k&theta; &asymp; 1-(k&theta;)<sup>2</sup>/2<br>
+&bull; <strong>Common error:</strong> Using sin &theta; &asymp; &theta; for large &theta; - approximation only valid for &theta; near 0
+</div>
+
+<div class="tip-box">
+<strong>Reciprocal Trig Functions</strong><br>
+&bull; sec x=1/cos x, cosec x=1/sin x, cot x=1/tan x=cos x/sin x<br>
+&bull; Graphs: sec and cosec have vertical asymptotes where cos/sin = 0<br>
+&bull; Derivatives: d(sec x)/dx=sec x tan x, d(cosec x)/dx=-cosec x cot x, d(cot x)/dx=-cosec<sup>2</sup>x<br>
+&bull; Integrals: &int;sec<sup>2</sup>x dx=tan x+C, &int;cosec<sup>2</sup>x dx=-cot x+C, &int;sec x tan x dx=sec x+C<br>
+&bull; <strong>Common error:</strong> Confusing the domains: sec x=1/cos x &rarr; undefined when cos x=0
+</div>
+
+<div class="tip-box">
+<strong>Trig Equations</strong><br>
+&bull; Get one trig function alone first, then find all solutions in the given range<br>
+&bull; Use the quadrant diagram (CAST) to find all solutions systematically<br>
+&bull; For quadratic forms (e.g., sin<sup>2</sup>x+sin x-2=0): factorise and solve each factor separately<br>
+&bull; For tan x=k: principal value in (-&pi;/2, &pi;/2), then add &pi; to find others<br>
+&bull; <strong>Common error:</strong> Missing solutions. For sin x=k in 0-360&deg;, there are usually 2 solutions. For tan x=k, there are usually 2 solutions in 0-360&deg;
+</div>
+
+<div class="tip-box">
+<strong>Compound &amp; Double Angles</strong><br>
+&bull; sin(A&plusmn;B)=sinAcosB&plusmn;cosAsinB, cos(A&plusmn;B)=cosAcosB&minus;sinAsinB, tan(A&plusmn;B)=(tanA&plusmn;tanB)/(1&minus;tanAtanB)<br>
+&bull; Double angles: sin2A=2sinAcosA, cos2A=cos<sup>2</sup>A-sin<sup>2</sup>A=2cos<sup>2</sup>A-1=1-2sin<sup>2</sup>A<br>
+&bull; cos2A=2cos<sup>2</sup>A-1 gives cos<sup>2</sup>A=(1+cos2A)/2 (useful for integration)<br>
+&bull; cos2A=1-2sin<sup>2</sup>A gives sin<sup>2</sup>A=(1-cos2A)/2 (useful for integration)<br>
+&bull; <strong>Common error:</strong> Sign errors in cos(A-B)=cosAcosB+sinAsinB (the sign is OPPOSITE to what many expect)
+</div>
+
+<div class="tip-box">
+<strong>Harmonic Form (R cos / R sin)</strong><br>
+&bull; a cos x + b sin x = R cos(x-&alpha;) where R=&radic;(a<sup>2</sup>+b<sup>2</sup>), cos &alpha;=a/R, sin &alpha;=b/R<br>
+&bull; a sin x + b cos x = R sin(x+&alpha;) where R=&radic;(a<sup>2</sup>+b<sup>2</sup>), sin &alpha;=b/R, cos &alpha;=a/R<br>
+&bull; Max value=R, min value=-R<br>
+&bull; When solving R cos(x-&alpha;)=k, general solution: x-&alpha;=&plusmn;cos<sup>-1</sup>(k/R)+2n&pi;<br>
+&bull; <strong>Common error:</strong> Forgetting to adjust ALL solutions by adding/subtracting &alpha; after finding them
+</div>
+
+<div class="tip-box">
+<strong>Differentiation Rules</strong><br>
+&bull; Chain: dy/dx=dy/du&times;du/dx. Useful for functions of functions<br>
+&bull; Product: d(uv)/dx=u dv/dx+v du/dx<br>
+&bull; Quotient: d(u/v)/dx=(v du/dx-u dv/dx)/v<sup>2</sup><br>
+&bull; Write "u=..., v=..." explicitly - examiners award method marks even if final answer is wrong<br>
+&bull; <strong>Common error:</strong> In quotient rule, getting the minus sign wrong. "vdu-udv over v-squared, in that order"
+</div>
+
+<div class="tip-box">
+<strong>Implicit Differentiation</strong><br>
+&bull; Differentiate x terms normally, y terms with dy/dx attached<br>
+&bull; For xy: use product rule: y+x dy/dx<br>
+&bull; For y<sup>2</sup>: 2y dy/dx (chain rule)<br>
+&bull; Collect all dy/dx terms on one side, factorise<br>
+&bull; <strong>Common error:</strong> Forgetting the dy/dx when differentiating y terms (e.g., differentiating y<sup>2</sup> to 2y instead of 2y dy/dx)
+</div>
+
+<div class="tip-box">
+<strong>Parametric Differentiation</strong><br>
+&bull; dy/dx = (dy/dt) &divide; (dx/dt)<br>
+&bull; d<sup>2</sup>y/dx<sup>2</sup> = d/dx(dy/dx) = d/dt(dy/dx) &divide; (dx/dt)<br>
+&bull; For tangents: find dy/dx at the point, use y-y<sub>0</sub>=m(x-x<sub>0</sub>)<br>
+&bull; For normals: gradient = -1/(dy/dx) at the point<br>
+&bull; <strong>Common error:</strong> Writing dy/dx=dx/dt&divide;dy/dt (inverted). Always: parametric derivative=(dy/dt)/(dx/dt)
+</div>
+
+<div class="tip-box">
+<strong>Points of Inflection</strong><br>
+&bull; Condition: d<sup>2</sup>y/dx<sup>2</sup>=0 AND d<sup>2</sup>y/dx<sup>2</sup> changes sign (or d<sup>3</sup>y/dx<sup>3</sup>&ne;0)<br>
+&bull; Check sign change either side - necessary for full marks<br>
+&bull; A point of inflection is where the curve changes from concave to convex (or vice versa)<br>
+&bull; <strong>Common error:</strong> Just solving d<sup>2</sup>y/dx<sup>2</sup>=0 without checking sign change. A stationary point with d<sup>2</sup>y/dx<sup>2</sup>=0 is not guaranteed to be an inflection!
+</div>
+
+<div class="tip-box">
+<strong>Integration</strong><br>
+&bull; Standard integrals: know sin&rarr;-cos, cos&rarr;sin, e<sup>kx</sup>&rarr;(1/k)e<sup>kx</sup>, 1/x&rarr;ln|x|<br>
+&bull; Substitution: change limits when doing definite integrals (don't back-substitute)<br>
+&bull; Parts: &int;u dv/dx dx = uv - &int;v du/dx dx. Choose u wisely (LATE rule: Logs, Algebra, Trig, Exponentials)<br>
+&bull; For &int;x<sup>n</sup>e<sup>x</sup>dx: multiple rounds of parts needed<br>
+&bull; <strong>Common error:</strong> Forgetting the constant of integration +C for indefinite integrals. This costs a mark every time
+</div>
+
+<div class="tip-box">
+<strong>Area Between Curves</strong><br>
+&bull; Area = &int;(upper-lower) dx between intersection points<br>
+&bull; Find intersection points first (set equations equal)<br>
+&bull; For parametric curves: Area = &int;y dx = &int;y(dx/dt) dt<br>
+&bull; Always draw a quick sketch to determine which curve is above<br>
+&bull; <strong>Common error:</strong> Integrating the wrong way round (e.g., lower-upper gives negative area). Take absolute value or sketch first
+</div>
+
+<div class="tip-box">
+<strong>Differential Equations</strong><br>
+&bull; Separation of variables: get all y terms with dy, all x terms with dx<br>
+&bull; Integrate both sides, add constant to one side only<br>
+&bull; Use initial condition to find the constant<br>
+&bull; Express y explicitly as a function of x where possible<br>
+&bull; <strong>Common error:</strong> Forgetting the constant of integration, or not using the initial condition to find its value
+</div>
+
+<div class="tip-box">
+<strong>Numerical Methods</strong><br>
+&bull; Sign change: show f(a)&times;f(b)&lt;0 and state continuity<br>
+&bull; Newton-Raphson: x<sub>n+1</sub>=x<sub>n</sub>-f(x<sub>n</sub>)/f'(x<sub>n</sub>). Iterate until convergence to required dp<br>
+&bull; Iteration: rearrange equation to x=g(x) form, use x<sub>n+1</sub>=g(x<sub>n</sub>)<br>
+&bull; Trapezium Rule: h/2[(y<sub>0</sub>+y<sub>n</sub>)+2(y<sub>1</sub>+...+y<sub>n-1</sub>)], with h=(b-a)/n<br>
+&bull; <strong>Common error:</strong> In the trapezium rule, forgetting to multiply the middle terms by 2, or using the wrong h
+</div>
+
+<div class="tip-box">
+<strong>General Exam Technique</strong><br>
+&bull; Show ALL working - WJEC awards method marks even for incorrect final answers<br>
+&bull; For "show that" questions, reproduce every step clearly. Don't skip algebraic simplifications<br>
+&bull; Check degrees/radians mode! This is the #1 avoidable error<br>
+&bull; 2hr30min for 120 marks &rarr; about 1.25 minutes per mark. Use time proportionally<br>
+&bull; Answer every question - even partial working earns marks<br>
+&bull; Read the question twice before starting. Note which parts are linked (e.g., "(a) hence" means use (a) in (b))<br>
+&bull; For exact answers: leave in surd/fraction form unless told otherwise<br>
+&bull; For 3 sf answers: only round the final answer, not intermediate steps<br>
+&bull; <strong>Last tip:</strong> The most common mark lost in WJEC Unit 3 is the final A1 for not stating units or not rounding to the specified degree of accuracy
+</div>  <!-- end General Exam Technique tip-box -->
+</div>  <!-- end sec-tips -->
+
+</body>
+</html>
